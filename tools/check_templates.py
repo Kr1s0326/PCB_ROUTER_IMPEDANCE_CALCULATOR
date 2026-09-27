@@ -12,8 +12,6 @@
     python tools/check_templates.py
 """
 
-from __future__ import annotations
-
 import io
 import json
 import os

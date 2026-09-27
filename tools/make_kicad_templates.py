@@ -14,8 +14,6 @@
     python tools/make_kicad_templates.py --dry-run  # 只看会写什么
 """
 
-from __future__ import annotations
-
 import argparse
 import json
 import os
@@ -268,7 +266,7 @@ def main(argv=None):
         if args.dry_run:
             continue
         with open(os.path.join(TEMPLATES, fname + '.kicad_pcb'), 'w',
-                  encoding='utf-8') as fh:
+                  encoding='utf-8', newline='\n') as fh:
             fh.write(text)
         # .kicad_pro / .kicad_dru 从内置参考模板派生（不依赖外面的 PCB TEMPLATE/）
         with open(REF_PRO, encoding='utf-8') as fh:
@@ -276,12 +274,12 @@ def main(argv=None):
         pro = pro.replace(json.dumps(REF_NAME + '.kicad_pro'),
                           json.dumps(fname + '.kicad_pro'))
         with open(os.path.join(TEMPLATES, fname + '.kicad_pro'), 'w',
-                  encoding='utf-8') as fh:
+                  encoding='utf-8', newline='\n') as fh:
             fh.write(pro)
         with open(REF_DRU, encoding='utf-8') as fh:
             dru = fh.read()
         with open(os.path.join(TEMPLATES, fname + '.kicad_dru'), 'w',
-                  encoding='utf-8') as fh:
+                  encoding='utf-8', newline='\n') as fh:
             fh.write(dru)
         print('   → 写入 3 个文件')
     return 0

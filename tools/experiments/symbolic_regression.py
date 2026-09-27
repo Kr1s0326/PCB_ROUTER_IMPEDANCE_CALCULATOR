@@ -17,13 +17,11 @@
     python tools/symbolic_regression.py OffsetStripline1B1A
 """
 
-from __future__ import annotations
-
 import math
 import os
 import random
 import sys
-from typing import Callable, List, Optional, Sequence, Tuple
+from collections.abc import Callable, Sequence
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
@@ -38,7 +36,7 @@ from impedance_calculator import analytic
 VAR_NAMES = ['x', 'y', 'tap', 'e', 'w', 'x1', 'er2', 's', 'd', 'c']
 
 
-def features_vec(p: dict) -> List[float]:
+def features_vec(p: dict) -> list[float]:
     """符号回归的输入向量（与 calibration.features 里的量一致）。"""
     w = (float(p['W1']) + float(p['W2'])) / 2.0
     h1, er1, t1 = float(p['H1']), float(p['Er1']), float(p['T1'])

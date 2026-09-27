@@ -9,8 +9,6 @@
     python tools/experiments/analyze_coverage.py
 """
 
-from __future__ import annotations
-
 import collections
 import math
 import os

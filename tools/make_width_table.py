@@ -1,7 +1,5 @@
 """生成一份「常用叠层 → 推荐线宽/线距」速查表（数据来自嘉立创在线引擎）。"""
 
-from __future__ import annotations
-
 import os
 import sys
 
@@ -41,7 +39,7 @@ def main() -> int:
                 print(name, layer, cells)
             lines.append("")
     out = os.path.join(C.REPORTS, "stackup_widths.md")
-    with open(out, "w", encoding="utf-8") as fh:
+    with open(out, "w", encoding="utf-8", newline='\n') as fh:
         fh.write("\n".join(lines) + "\n")
     print("wrote", out)
     return 0

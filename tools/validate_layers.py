@@ -14,8 +14,6 @@
     python tools/validate_layers.py --quick      # 每层只测单端+差分
 """
 
-from __future__ import annotations
-
 import argparse
 import html
 import json
@@ -154,7 +152,7 @@ def main(argv=None):
     meta = {'generated': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             'requests': n_req, 'seconds': round(time.time() - t0, 1),
             'cases_per_layer': len(cases)}
-    with open(OUT_JSON, 'w', encoding='utf-8') as fh:
+    with open(OUT_JSON, 'w', encoding='utf-8', newline='\n') as fh:
         json.dump({'meta': meta, 'rows': rows}, fh, ensure_ascii=False, indent=1)
     write_html(rows, meta)
     print('\n→ %s\n→ %s\n（%d 个请求，%.0f 秒）'
@@ -445,7 +443,7 @@ def write_html(rows, meta):
       '两者都小才说明离线模型可靠。'
       '绿色 ≤1%，黄色 1~3%，红色 &gt;3%。</div>')
     A('</body></html>')
-    with open(OUT_HTML, 'w', encoding='utf-8') as fh:
+    with open(OUT_HTML, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write('\n'.join(p))
 
 

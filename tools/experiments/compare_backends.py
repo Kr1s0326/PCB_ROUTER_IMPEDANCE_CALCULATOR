@@ -20,8 +20,6 @@
     python tools/experiments/compare_backends.py --symbolic      # 额外跑符号回归（慢）
 """
 
-from __future__ import annotations
-
 import argparse
 import json
 import math
@@ -200,9 +198,9 @@ def main(argv=None):
     for mark, r in rows_out:
         cells = ['%.2f%%' % r[n][1] if n in r else '—' for n in BACKEND_ORDER]
         lines.append('| `%s` | %s |' % (mark, ' | '.join(cells)))
-    with open(OUT, 'w', encoding='utf-8') as fh:
+    with open(OUT, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write('\n'.join(lines) + '\n')
-    with open(OUT_JSON, 'w', encoding='utf-8') as fh:
+    with open(OUT_JSON, 'w', encoding='utf-8', newline='\n') as fh:
         json.dump({m: {k: list(v) for k, v in r.items()} for m, r in rows_out},
                   fh, ensure_ascii=False, indent=1)
     print('\n→ %s\n→ %s' % (OUT, OUT_JSON))

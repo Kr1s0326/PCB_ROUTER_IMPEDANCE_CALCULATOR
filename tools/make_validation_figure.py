@@ -16,8 +16,6 @@
     python tools/make_validation_figure.py
 """
 
-from __future__ import annotations
-
 import json
 import math
 import os
@@ -395,7 +393,7 @@ def main(argv=None):
     out_dir = os.path.dirname(os.path.abspath(args.out))
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
-    with open(args.out, 'w', encoding='utf-8') as fh:
+    with open(args.out, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(c.render())
 
     print('正算  平均 %.3f%%  中位 %.3f%%  ≤2%%: %.0f%%  n=%d'

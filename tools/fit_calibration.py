@@ -20,13 +20,11 @@
     python tools/fit_calibration.py --no-eval  # 只拟合，跳过慢的留出集反算
 """
 
-from __future__ import annotations
-
 import argparse
 import math
 import os
 import sys
-from typing import Any, Dict, List
+from typing import Any
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -44,8 +42,8 @@ def main(argv=None) -> int:
     C.ensure_dirs()
     train = C.prepare(C.load(C.FILE_TRAIN))
     hold = C.prepare(C.load(C.FILE_HOLDOUT)) if os.path.exists(C.FILE_HOLDOUT) else []
-    by_train: Dict[str, List[Any]] = {}
-    by_hold: Dict[str, List[Any]] = {}
+    by_train: dict[str, list[Any]] = {}
+    by_hold: dict[str, list[Any]] = {}
     for r in train:
         by_train.setdefault(r['mark'], []).append(r)
     for r in hold:
@@ -53,10 +51,10 @@ def main(argv=None) -> int:
     print('训练 %d 条 / 留出 %d 条 / %d 个结构'
           % (len(train), len(hold), len(by_train)))
 
-    result: Dict[str, Dict[str, Any]] = {}
-    stores: Dict[str, Dict[str, Any]] = {}
-    quality: Dict[str, Dict[str, Any]] = {}
-    report: List[tuple] = []
+    result: dict[str, dict[str, Any]] = {}
+    stores: dict[str, dict[str, Any]] = {}
+    quality: dict[str, dict[str, Any]] = {}
+    report: list[tuple] = []
 
     for mark, rs in sorted(by_train.items()):
         if len(rs) < 25:
@@ -78,8 +76,8 @@ def main(argv=None) -> int:
                  'X': krr.Xs, 'alpha': krr.alpha}
 
         # 留出集：线性级与完整两级模型各评一次（出厂的是两级，报给用户的也必须是它）
-        hw_lin: List[float] = []
-        hw: List[float] = []
+        hw_lin: list[float] = []
+        hw: list[float] = []
         if by_hold.get(mark) and not args.no_eval:
             hw_lin, _ = C.width_errors(by_hold[mark], names, beta)
             hw, _ = C.width_errors(by_hold[mark], names, beta, krr_store=store)
@@ -105,7 +103,7 @@ def main(argv=None) -> int:
     return 0
 
 
-def _write_report(report: List[tuple]) -> None:
+def _write_report(report: list[tuple]) -> None:
     lines = ['# 离线模型校准报告', '',
              '全部为**反算线宽**相对误差（给定目标阻抗解线宽，与官网解出的线宽比）。', '',
              '| 结构 | 样本 | 基底 | 训练集 CV | 线性级 | **两级(出厂)** | 留出集最大 | n | 工作区 |',
@@ -126,7 +124,7 @@ def _write_report(report: List[tuple]) -> None:
         lines += ['### %s' % mark, '', '| 特征 | 系数 |', '|---|---|']
         lines += ['| `%s` | %.6f |' % (nm, b) for nm, b in zip(names, beta)]
         lines.append('')
-    with open(C.OUT_CALIB_REPORT, 'w', encoding='utf-8') as fh:
+    with open(C.OUT_CALIB_REPORT, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write('\n'.join(lines) + '\n')
 
 

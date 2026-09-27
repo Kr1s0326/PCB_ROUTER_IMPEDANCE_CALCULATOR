@@ -11,8 +11,6 @@
     python tools/check_engine.py --only A
 """
 
-from __future__ import annotations
-
 import argparse
 import json
 import math
@@ -142,7 +140,7 @@ def main(argv=None):
         if args.only in (None, 'C'):
             print()
             print('=== C. 采准零铜厚（T=0.01）验证点 %d 组 ===' % len(ZERO_CASES))
-            with open(OUT_ZERO, 'w', encoding='utf-8') as fh:
+            with open(OUT_ZERO, 'w', encoding='utf-8', newline='\n') as fh:
                 for mark, p in ZERO_CASES:
                     r = api.calculate(mark, dict(p, dCalculateMode=3))
                     fh.write(json.dumps({'mark': mark, 'params': p, 'z': r.impedance,

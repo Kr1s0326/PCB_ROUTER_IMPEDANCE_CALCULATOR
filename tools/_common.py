@@ -12,14 +12,13 @@
     reports/  脚本生成的报告
 """
 
-from __future__ import annotations
-
 import json
 import math
 import os
 import random
 import sys
-from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
+from collections.abc import Iterable, Sequence
+from typing import Any, Optional
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
@@ -70,11 +69,11 @@ def default_template_dir() -> str:
 # --------------------------------------------------------------------------- #
 #  数据
 # --------------------------------------------------------------------------- #
-def load(paths) -> List[Dict[str, Any]]:
+def load(paths) -> list[dict[str, Any]]:
     """读一个或多个 jsonl；``paths`` 可以是字符串或列表。"""
     if isinstance(paths, str):
         paths = [paths]
-    rows: List[Dict[str, Any]] = []
+    rows: list[dict[str, Any]] = []
     for path in paths:
         if not os.path.exists(path):
             continue
@@ -86,7 +85,7 @@ def load(paths) -> List[Dict[str, Any]]:
     return rows
 
 
-def physically_valid(r: Dict[str, Any]) -> bool:
+def physically_valid(r: dict[str, Any]) -> bool:
     """滤掉采样里不可能的几何（介质比 3 mil 还薄）。"""
     p = r['params']
     if p['H1'] < H_MIN_MIL:
@@ -96,7 +95,7 @@ def physically_valid(r: Dict[str, Any]) -> bool:
     return True
 
 
-def prepare(rows: Iterable[Dict[str, Any]], verbose: bool = True) -> List[Dict[str, Any]]:
+def prepare(rows: Iterable[dict[str, Any]], verbose: bool = True) -> list[dict[str, Any]]:
     """算出每条的 ``f``（特征）与 ``ly = ln(Z_官网 / Z_base)``。"""
     out, dropped = [], 0
     for r in rows:
@@ -121,7 +120,7 @@ def prepare(rows: Iterable[Dict[str, Any]], verbose: bool = True) -> List[Dict[s
 #  线性回归（纯标准库）
 # --------------------------------------------------------------------------- #
 def solve_normal(X: Sequence[Sequence[float]], y: Sequence[float],
-                 ridge: float = 1e-6) -> Optional[List[float]]:
+                 ridge: float = 1e-6) -> list[float] | None:
     """岭回归 ``(XᵗX + λI)β = Xᵗy``，高斯消元求解。"""
     n, p = len(X), len(X[0])
     A = [[0.0] * p for _ in range(p)]
@@ -158,24 +157,24 @@ def solve_normal(X: Sequence[Sequence[float]], y: Sequence[float],
     return beta
 
 
-def fit_beta(rows: Sequence[Dict[str, Any]], names: Sequence[str]) -> Optional[List[float]]:
+def fit_beta(rows: Sequence[dict[str, Any]], names: Sequence[str]) -> list[float] | None:
     return solve_normal([[r['f'].get(n, 0.0) for n in names] for r in rows],
                         [r['ly'] for r in rows])
 
 
-def predict(beta: Sequence[float], names: Sequence[str], feats: Dict[str, float]) -> float:
+def predict(beta: Sequence[float], names: Sequence[str], feats: dict[str, float]) -> float:
     return sum(b * feats.get(n, 0.0) for b, n in zip(beta, names))
 
 
-def folds(n: int, k: int = 5, seed: int = 0) -> List[List[int]]:
+def folds(n: int, k: int = 5, seed: int = 0) -> list[list[int]]:
     idx = list(range(n))
     random.Random(seed).shuffle(idx)
     return [idx[i::k] for i in range(k)]
 
 
-def cv_ln_error(rows: Sequence[Dict[str, Any]], names: Sequence[str],
+def cv_ln_error(rows: Sequence[dict[str, Any]], names: Sequence[str],
                 k: int = 5, seed: int = 0) -> float:
-    errs: List[float] = []
+    errs: list[float] = []
     for f in folds(len(rows), k, seed):
         test = set(f)
         tr = [r for i, r in enumerate(rows) if i not in test]
@@ -187,8 +186,8 @@ def cv_ln_error(rows: Sequence[Dict[str, Any]], names: Sequence[str],
     return math.sqrt(sum(e * e for e in errs) / len(errs))
 
 
-def forward_select(rows: Sequence[Dict[str, Any]], pool: Sequence[str],
-                   max_terms: int = 10, k: int = 5) -> Tuple[List[str], Optional[List[float]], float]:
+def forward_select(rows: Sequence[dict[str, Any]], pool: Sequence[str],
+                   max_terms: int = 10, k: int = 5) -> tuple[list[str], list[float] | None, float]:
     """前向选择：以 5 折 CV 误差为准逐个加特征。"""
     chosen = ['1']
     best = cv_ln_error(rows, chosen, k)
@@ -210,8 +209,8 @@ def forward_select(rows: Sequence[Dict[str, Any]], pool: Sequence[str],
 # --------------------------------------------------------------------------- #
 #  误差度量（端到端：反算线宽）
 # --------------------------------------------------------------------------- #
-def cal_z(mark: str, params: Dict[str, float], names: Sequence[str],
-          beta: Sequence[float], krr_store: Optional[dict] = None) -> float:
+def cal_z(mark: str, params: dict[str, float], names: Sequence[str],
+          beta: Sequence[float], krr_store: dict | None = None) -> float:
     """校准后的阻抗。
 
     ``krr_store`` 给出时叠加核级残差修正，即**出厂模型的完整两级校准**
@@ -226,10 +225,10 @@ def cal_z(mark: str, params: Dict[str, float], names: Sequence[str],
     return zb * math.exp(max(-1.0, min(1.0, k)))
 
 
-def invert_width(mark: str, base: Dict[str, float], target: float, delta: float,
+def invert_width(mark: str, base: dict[str, float], target: float, delta: float,
                  names: Sequence[str], beta: Sequence[float],
                  hi: float = 250.0, steps: int = 60,
-                 krr_store: Optional[dict] = None) -> Optional[float]:
+                 krr_store: dict | None = None) -> float | None:
     """二分反算线宽 W1，使校准模型给出 target。"""
     lo = delta + 0.2
 
@@ -249,10 +248,10 @@ def invert_width(mark: str, base: Dict[str, float], target: float, delta: float,
     return (lo + hi) / 2.0
 
 
-def width_errors(rows: Sequence[Dict[str, Any]], names: Sequence[str],
-                 beta: Sequence[float], z_range: Optional[Tuple[float, float]] = None,
+def width_errors(rows: Sequence[dict[str, Any]], names: Sequence[str],
+                 beta: Sequence[float], z_range: tuple[float, float] | None = None,
                  steps: int = 60,
-                 krr_store: Optional[dict] = None) -> Tuple[List[float], int]:
+                 krr_store: dict | None = None) -> tuple[list[float], int]:
     """在留出数据上反算线宽，返回 ``(百分比误差列表, 未收敛数)``。
 
     传入 ``krr_store`` 时评估的是完整的两级模型。
@@ -271,10 +270,10 @@ def width_errors(rows: Sequence[Dict[str, Any]], names: Sequence[str],
     return out, skipped
 
 
-def width_cv(rows: Sequence[Dict[str, Any]], names: Sequence[str],
-             k: int = 5, seed: int = 0, steps: int = 60) -> List[float]:
+def width_cv(rows: Sequence[dict[str, Any]], names: Sequence[str],
+             k: int = 5, seed: int = 0, steps: int = 60) -> list[float]:
     """训练集内部 5 折（对用了 CV 挑特征的模型偏乐观，仅供参考）。"""
-    errs: List[float] = []
+    errs: list[float] = []
     for f in folds(len(rows), k, seed):
         test = set(f)
         tr = [r for i, r in enumerate(rows) if i not in test]
@@ -298,7 +297,7 @@ def median(v: Sequence[float]) -> float:
     return s[n // 2] if n % 2 else (s[n // 2 - 1] + s[n // 2]) / 2.0
 
 
-def stats(v: Sequence[float]) -> Tuple[float, float, int]:
+def stats(v: Sequence[float]) -> tuple[float, float, int]:
     return rms(v), (max(abs(x) for x in v) if v else float('nan')), len(v)
 
 
@@ -317,8 +316,8 @@ def pearson(a: Sequence[float], b: Sequence[float]) -> float:
 # --------------------------------------------------------------------------- #
 #  生成文件
 # --------------------------------------------------------------------------- #
-def write_coefs(result: Dict[str, Dict[str, Any]],
-                quality: Dict[str, Dict[str, Any]]) -> None:
+def write_coefs(result: dict[str, dict[str, Any]],
+                quality: dict[str, dict[str, Any]]) -> None:
     """写 ``impedance_calculator/_coefs.py``（线性级）。"""
     lines = [
         '"""离线模型的线性校准系数 —— **自动生成，请勿手改**。',
@@ -344,12 +343,12 @@ def write_coefs(result: Dict[str, Dict[str, Any]],
         lines.append('    },')
     lines.append('}')
     lines.append('')
-    with open(OUT_COEFS, 'w', encoding='utf-8') as fh:
+    with open(OUT_COEFS, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write('\n'.join(lines))
 
 
-def write_krrs(stores: Dict[str, Dict[str, Any]],
-               quality: Optional[Dict[str, float]] = None) -> None:
+def write_krrs(stores: dict[str, dict[str, Any]],
+               quality: dict[str, float] | None = None) -> None:
     """写 ``impedance_calculator/_krrs.py``（RBF 核岭回归支持集）。"""
     quality = quality or {}
     lines = [
@@ -382,5 +381,5 @@ def write_krrs(stores: Dict[str, Dict[str, Any]],
         lines.append('    },')
     lines.append('}')
     lines.append('')
-    with open(OUT_KRRS, 'w', encoding='utf-8') as fh:
+    with open(OUT_KRRS, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write('\n'.join(lines))

@@ -11,8 +11,6 @@
     python tools/experiments/check_base_models.py
 """
 
-from __future__ import annotations
-
 import os
 import sys
 

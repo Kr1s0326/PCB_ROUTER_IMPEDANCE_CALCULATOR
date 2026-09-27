@@ -10,8 +10,6 @@
     python tools/fetch_stackups.py --show     # 只打印缓存内容
 """
 
-from __future__ import annotations
-
 import argparse
 import json
 import os
@@ -57,7 +55,7 @@ def fetch():
             out[str(n)] = [compact(t) for t in lst]
             print('  %2d 层: %d 个叠层' % (n, len(lst)))
     C.ensure_dirs()
-    with open(C.FILE_STACKUPS, 'w', encoding='utf-8') as fh:
+    with open(C.FILE_STACKUPS, 'w', encoding='utf-8', newline='\n') as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
     return out
 

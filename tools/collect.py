@@ -30,8 +30,6 @@ reverse 官网 goal-seek 反算（对拍"正算模型+二分"）            reve
     python tools/collect.py                   # 全部（约 960 个请求 / 28 分钟）
 """
 
-from __future__ import annotations
-
 import argparse
 import json
 import math
@@ -243,7 +241,7 @@ def load_done(path):
 
 def append(path, rows):
     C.ensure_dirs()
-    with open(path, 'a', encoding='utf-8') as fh:
+    with open(path, 'a', encoding='utf-8', newline='\n') as fh:
         for r in rows:
             fh.write(json.dumps(r, ensure_ascii=False) + '\n')
 
