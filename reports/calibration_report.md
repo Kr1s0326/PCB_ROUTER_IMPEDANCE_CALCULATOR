@@ -19,7 +19,7 @@
 
 > 「基底」＝纯物理公式（无校准）在训练集上的 lnZ 残差；
 > 「线性级」＝只加对数线性修正；「两级(出厂)」＝线性 + RBF 核残差，
-> 即 :func:`jlc_impedance.calibration.apply_correction` 实际给出的模型。
+> 即 :func:`impedance_calculator.calibration.apply_correction` 实际给出的模型。
 > 留出集（`data/holdout.jsonl`）从不参与拟合与特征选择，是**唯一无偏**的口径；
 > 训练集 CV 因为前向选择用过全量数据而偏乐观。
 

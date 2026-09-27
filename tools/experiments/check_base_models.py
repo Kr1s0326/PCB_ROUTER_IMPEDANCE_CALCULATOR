@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 import _common as C                                              # noqa: E402
-from jlc_impedance import analytic                               # noqa: E402
+from impedance_calculator import analytic                               # noqa: E402
 
 #: 真实叠层窗口：内层 H1 是芯板（大）、H2 是 prepreg+铜（小），T=0.6
 WINDOWS = [

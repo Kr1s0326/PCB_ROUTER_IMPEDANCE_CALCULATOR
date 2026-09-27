@@ -43,7 +43,7 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import _common as C                                              # noqa: E402
-from jlc_impedance.api import JlcApi, JlcApiError                # noqa: E402
+from impedance_calculator.api import JlcApi, JlcApiError                # noqa: E402
 
 OUT_EXTRA = os.path.join(C.DATA, 'calibration_extra.jsonl')
 

@@ -32,9 +32,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import _common as C                                              # noqa: E402
 from fetch_stackups import load_cache                            # noqa: E402
-from jlc_impedance.api import JlcApi, JlcApiError                # noqa: E402
-from jlc_impedance.calculator import ImpedanceCalculator         # noqa: E402
-from jlc_impedance.stackup import Stackup                        # noqa: E402
+from impedance_calculator.api import JlcApi, JlcApiError                # noqa: E402
+from impedance_calculator.calculator import ImpedanceCalculator         # noqa: E402
+from impedance_calculator.stackup import Stackup                        # noqa: E402
 
 OUT_JSON = os.path.join(C.REPORTS, 'validation_all.json')
 OUT_HTML = os.path.join(C.REPORTS, 'validation_report.html')

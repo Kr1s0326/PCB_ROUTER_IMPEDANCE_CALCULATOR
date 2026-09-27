@@ -27,7 +27,7 @@
    嘉立创后台用的是 Polar SI9000 一类的**边界元场求解器**，本模块是解析近似。
    套上校准层后：微带线约 ±0.6%~1.5%，带状线约 ±7%，共面约 ±3%~12%
    （每个结构的实测误差见 ``_coefs.py`` 的 ``width_holdout``）。
-   要逐位一致请用 :class:`jlc_impedance.api.JlcApi`（在线模式）。
+   要逐位一致请用 :class:`impedance_calculator.api.JlcApi`（在线模式）。
 """
 
 from __future__ import annotations
@@ -119,7 +119,7 @@ def stripline(H1: float, Er1: float, H2: Optional[float], Er2: Optional[float],
               W1: float, W2: float, T: float, **kw) -> Tuple[float, float]:
     """带状线（内层）：**用 MoM 精确解**（T→0）+ 铜厚等效加宽。
 
-    偏置带状线是标准二维场问题，``jlc_impedance.mom`` 里那套方法矩能算到
+    偏置带状线是标准二维场问题，``impedance_calculator.mom`` 里那套方法矩能算到
     **0.02%~0.14%**（与 SI9000 的 T=0.01 数据比），比原来「等效高度微带」
     硬凑（误差 13.5%）好两个数量级。
     """

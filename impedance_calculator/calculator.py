@@ -78,8 +78,8 @@ class Solution:
 class ImpedanceCalculator:
     """在某个叠层上做阻抗正算 / 反算。
 
-    :param stackup: :class:`~jlc_impedance.stackup.Stackup`
-    :param api: 传 :class:`~jlc_impedance.api.JlcApi` 则使用**在线**引擎（与官网一致）
+    :param stackup: :class:`~impedance_calculator.stackup.Stackup`
+    :param api: 传 :class:`~impedance_calculator.api.JlcApi` 则使用**在线**引擎（与官网一致）
     :param copper_config / coverlay_config: 嘉立创的线宽增量 / 阻焊厚度配置表，
         不传则用官方文档默认值（外层 1oz：T1=1.6mil，C1/C2/C3=1.2/0.6/1.2，CEr=3.8）
     """

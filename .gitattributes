@@ -11,6 +11,6 @@
 # 生成物：GitHub 语言统计里不要把报告算进去
 reports/*.json  linguist-generated=true
 reports/*.html  linguist-generated=true
-jlc_impedance/_coefs.py  linguist-generated=true
-jlc_impedance/_krrs.py   linguist-generated=true
+impedance_calculator/_coefs.py  linguist-generated=true
+impedance_calculator/_krrs.py   linguist-generated=true
 data/*.jsonl             linguist-generated=true

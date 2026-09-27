@@ -33,7 +33,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import _common as C
 from fetch_stackups import load_cache
-from jlc_impedance.stackup import match_name
+from impedance_calculator.stackup import match_name
 
 #: (层数, 官网叠层名前缀, 模板文件名, .kicad_pro/.dru 参考模板)
 #: 参考模板写自己 = 原地重写（保留原有 .kicad_pro 内容，只更新 .kicad_pcb）
@@ -237,7 +237,7 @@ def build_pcb(tpl, fname, n_layers):
 
 
 def find_stackup(cache, n, key):
-    """按名字找叠层（复用 ``jlc_impedance.stackup.match_name`` 的边界匹配规则）。"""
+    """按名字找叠层（复用 ``impedance_calculator.stackup.match_name`` 的边界匹配规则）。"""
     for it in cache.get(str(n), []):
         nm = it.get('receptionDisplayName') or it.get('appointName') or ''
         if match_name(nm, key):

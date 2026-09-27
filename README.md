@@ -18,26 +18,26 @@ Python 3.9+ · 运行时零依赖 · 52 个离线测试 · MIT
 
 ```bash
 # 反算：叠层 + 目标阻抗 → 线宽（默认离线引擎）
-python -m jlc_impedance solve --stackup JLC04161H-7628 --layer L1 L2 --z0 50
+python -m impedance_calculator solve --stackup JLC04161H-7628 --layer L1 L2 --z0 50
 #   L1  CoatedMicrostrip1B  线宽 W1 = 13.952 mil (0.3544 mm)  实际阻抗 = 50.000 Ω  [analytic]
 #   L2  OffsetStripline1B1A 线宽 W1 = 11.067 mil (0.2811 mm)  实际阻抗 = 50.000 Ω  [analytic]
 #       (离线模型：反算线宽典型误差 ±1.6% / ±3.0%)
 
 # 正算：线宽 → 阻抗
-python -m jlc_impedance forward --stackup JLC04161H-7628 --layer L2 --width 11.067
+python -m impedance_calculator forward --stackup JLC04161H-7628 --layer L2 --width 11.067
 #   L2  OffsetStripline1B1A  阻抗 = 49.999 Ω  [analytic]
 
 # 同一组参数改走在线引擎取真值
-python -m jlc_impedance solve --stackup JLC04161H-7628 --layer L2 --z0 50 --online
+python -m impedance_calculator solve --stackup JLC04161H-7628 --layer L2 --z0 50 --online
 #   L2  OffsetStripline1B1A  线宽 W1 = 10.879 mil (0.2763 mm)  实际阻抗 = 50.001 Ω  [online]
 
 # 导出 KiCad 设计规则片段
-python -m jlc_impedance rules --stackup JLC04161H-3313 --layer L1 \
+python -m impedance_calculator rules --stackup JLC04161H-3313 --layer L1 \
     --z0-single 50 --z0-diff 100
 ```
 
 ```python
-from jlc_impedance import JlcApi, ImpedanceCalculator, stackup
+from impedance_calculator import JlcApi, ImpedanceCalculator, stackup
 
 st = stackup.BUILTIN_STACKUPS["JLC04161H-7628"]
 
@@ -159,7 +159,7 @@ calculator.py ─┬─→ 在线引擎 api.py ──→ tools.jlc.com（SI9000�
 | `api.py` | 在线引擎（HTTP + 自己实现的 WebSocket，只用标准库） |
 | `mlmodels.py` | 拟合后端：KRR / GP / MLP / 堆叠 / 分层收缩，仅 `tools/` 使用 |
 
-`jlc_impedance` 是可直接交付的库，零外部依赖；`tools/` 是生成和验证它的脚本；
+`impedance_calculator` 是可直接交付的库，零外部依赖；`tools/` 是生成和验证它的脚本；
 `tools/experiments/` 保存被否掉的方案的对照实验，供复核。
 
 ## 设计决策
@@ -227,19 +227,19 @@ JlcApi()                                        # 在线引擎（上下文管理
   .calculate(type, params)  .solve(type, param, params, target)
   .templates(layers, thickness, ...)  .config_copper()  .config_coverlay()
 
-jlc_impedance.calibration.width_cv(type)        # 该结构的留出集误差（%）
-jlc_impedance.calibration.quality_note(type)    # 给结果加的可信度说明
+impedance_calculator.calibration.width_cv(type)        # 该结构的留出集误差（%）
+impedance_calculator.calibration.quality_note(type)    # 给结果加的可信度说明
 ```
 
 ```bash
-python -m jlc_impedance list                     # 列出叠层与 12 个结构
-python -m jlc_impedance show    --stackup <名>   # 叠层 → SI9000 参数
-python -m jlc_impedance solve   --stackup <名> --layer L1 L2 --z0 50
-python -m jlc_impedance forward --stackup <名> --layer L1 --width 8
-python -m jlc_impedance rules   --stackup <名> --layer L1 --z0-single 50 --z0-diff 100
+python -m impedance_calculator list                     # 列出叠层与 12 个结构
+python -m impedance_calculator show    --stackup <名>   # 叠层 → SI9000 参数
+python -m impedance_calculator solve   --stackup <名> --layer L1 L2 --z0 50
+python -m impedance_calculator forward --stackup <名> --layer L1 --width 8
+python -m impedance_calculator rules   --stackup <名> --layer L1 --z0-single 50 --z0-diff 100
 
 # 各子命令都接受 --online，改用在线引擎取真值
-python -m jlc_impedance solve --stackup <名> --layer L1 --z0 50 --online
+python -m impedance_calculator solve --stackup <名> --layer L1 --z0 50 --online
 ```
 
 ## 复现
@@ -258,7 +258,7 @@ python tools/collect.py
 # 3) 测参考基准的可靠性，并采 T=0.01 的验证点（约 63 个请求）
 python tools/check_engine.py
 
-# 4) 拟合 → jlc_impedance/_coefs.py、_krrs.py、reports/calibration_report.md
+# 4) 拟合 → impedance_calculator/_coefs.py、_krrs.py、reports/calibration_report.md
 python tools/fit_calibration.py
 
 # 5) 全层数校验 → reports/validation_all.json、validation_report.html（232 个请求）
@@ -284,40 +284,41 @@ python examples/walkthrough.py
 ## 目录结构
 
 ```
-impedance_calculator/
-├── jlc_impedance/              库（零依赖）
-│   ├── __main__.py             CLI
-│   ├── api.py                  在线引擎
-│   ├── structures.py           12 个 SI9000 结构
-│   ├── stackup.py              叠层解析与内置叠层
-│   ├── mom.py                  T→0 精确场解
-│   ├── analytic.py             物理基底、正算与反算
-│   ├── calibration.py          校准层
-│   ├── calculator.py           高层门面
-│   ├── mlmodels.py             拟合后端
-│   ├── _coefs.py               生成物，勿手改
-│   └── _krrs.py                生成物，勿手改
-├── tools/                      生成与验证
-│   ├── _common.py              共享层：数据、拟合、度量
-│   ├── fetch_stackups.py       取叠层并缓存
-│   ├── collect.py              采样（6 种 regime，可断点续采）
-│   ├── check_engine.py         测重复性、正反算自洽，采 T=0.01 验证点
-│   ├── fit_calibration.py      拟合校准层
-│   ├── validate_layers.py      全层数校验
-│   ├── make_validation_figure.py  校验图（手写 SVG）
-│   ├── make_width_table.py     叠层速查表
-│   ├── make_kicad_templates.py 生成 KiCad 模板
-│   ├── check_templates.py      复验 KiCad 模板
-│   ├── kicad_ref/              模板生成器用的参考文件
-│   └── experiments/            被否掉的方案
-├── data/                       采样数据
-├── reports/                    生成的报告
-├── examples/walkthrough.py     逐步讲解一次完整计算
-└── tests/                      52 个离线测试
+impedance_calculator/             项目根，也是仓库里的同名目录
+├── impedance_calculator/         Python 包（零依赖，可 pip install）
+│   ├── __main__.py               CLI
+│   ├── api.py                    在线引擎
+│   ├── structures.py             12 个 SI9000 结构
+│   ├── stackup.py                叠层解析与内置叠层
+│   ├── mom.py                    T→0 精确场解
+│   ├── analytic.py               物理基底、正算与反算
+│   ├── calibration.py            校准层
+│   ├── calculator.py             高层门面
+│   ├── mlmodels.py               拟合后端
+│   ├── _coefs.py                 生成物，勿手改
+│   ├── _krrs.py                  生成物，勿手改
+│   └── py.typed                  PEP 561 类型标记
+├── tools/                        生成与验证
+│   ├── _common.py                共享层：数据、拟合、度量
+│   ├── fetch_stackups.py         取叠层并缓存
+│   ├── collect.py                采样（6 种 regime，可断点续采）
+│   ├── check_engine.py           测重复性、正反算自洽，采 T=0.01 验证点
+│   ├── fit_calibration.py        拟合校准层
+│   ├── validate_layers.py        全层数校验
+│   ├── make_validation_figure.py 校验图（手写 SVG）
+│   ├── make_width_table.py       叠层速查表
+│   ├── make_kicad_templates.py   生成 KiCad 模板
+│   ├── check_templates.py        复验 KiCad 模板
+│   ├── kicad_ref/                模板生成器用的参考文件
+│   └── experiments/              被否掉的方案
+├── data/                         采样数据
+├── reports/                      生成的报告与校验图
+├── examples/walkthrough.py       逐步讲解一次完整计算
+└── tests/                        52 个离线测试
 ```
 
 工具脚本之间不互相 import，共享代码只放在 `tools/_common.py`，依赖方向始终是
-`tools/* → _common` 和 `tools/* → jlc_impedance`。
+`tools/* → _common` 和 `tools/* → impedance_calculator`。
 
 ## 许可
 

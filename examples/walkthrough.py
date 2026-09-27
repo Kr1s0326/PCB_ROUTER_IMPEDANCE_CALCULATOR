@@ -16,8 +16,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from jlc_impedance import analytic, calibration, mom               # noqa: E402
-from jlc_impedance.stackup import BUILTIN_STACKUPS                 # noqa: E402
+from impedance_calculator import analytic, calibration, mom               # noqa: E402
+from impedance_calculator.stackup import BUILTIN_STACKUPS                 # noqa: E402
 
 MARK = 'OffsetStripline1B1A'
 STACK = 'JLC04161H-7628'

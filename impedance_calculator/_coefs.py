@@ -2,7 +2,7 @@
 
 生成：``python tools/fit_calibration.py``
 公式：``Z = Z_base · exp(Σ βᵢ·φᵢ)``，基函数见
-``jlc_impedance/calibration.py`` 的 ``features()``。
+``impedance_calculator/calibration.py`` 的 ``features()``。
 """
 
 # flake8: noqa

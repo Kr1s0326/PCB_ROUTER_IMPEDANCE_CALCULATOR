@@ -1,9 +1,9 @@
-"""拟合离线校准层 → 生成 ``jlc_impedance/_coefs.py`` 与 ``_krrs.py``。
+"""拟合离线校准层 → 生成 ``impedance_calculator/_coefs.py`` 与 ``_krrs.py``。
 
 两级模型
 --------
 1. **线性级**：``ln(Z_官网/Z_base) = Σ βᵢφᵢ``
-   基函数见 ``jlc_impedance/calibration.py``；前向选择挑特征（以 5 折 CV 为准）+ 岭回归。
+   基函数见 ``impedance_calculator/calibration.py``；前向选择挑特征（以 5 折 CV 为准）+ 岭回归。
 2. **核级**：RBF 核岭回归修线性级的残差，``z = Σ αᵢexp(-γ‖x-Xᵢ‖²)``。
 
 为什么必须有第二级：留出集实测表明，单线性级平均线宽误差 6.6%，
@@ -32,7 +32,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import _common as C                                              # noqa: E402
-from jlc_impedance.mlmodels import KRR                           # noqa: E402
+from impedance_calculator.mlmodels import KRR                           # noqa: E402
 
 
 def main(argv=None) -> int:
@@ -117,7 +117,7 @@ def _write_report(report: List[tuple]) -> None:
                         p_rms))
     lines += ['', '> 「基底」＝纯物理公式（无校准）在训练集上的 lnZ 残差；',
               '> 「线性级」＝只加对数线性修正；「两级(出厂)」＝线性 + RBF 核残差，',
-              '> 即 :func:`jlc_impedance.calibration.apply_correction` 实际给出的模型。',
+              '> 即 :func:`impedance_calculator.calibration.apply_correction` 实际给出的模型。',
               '> 留出集（`data/holdout.jsonl`）从不参与拟合与特征选择，是**唯一无偏**的口径；',
               '> 训练集 CV 因为前向选择用过全量数据而偏乐观。', '',
               '## 线性级系数', '']

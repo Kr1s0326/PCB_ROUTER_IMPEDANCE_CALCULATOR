@@ -14,7 +14,7 @@ import unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from jlc_impedance import mom                                    # noqa: E402
+from impedance_calculator import mom                                    # noqa: E402
 
 ZEROCOPPER = os.path.join(ROOT, 'data', 'zerocopper.jsonl')
 
@@ -22,7 +22,7 @@ ZEROCOPPER = os.path.join(ROOT, 'data', 'zerocopper.jsonl')
 class TestMoM(unittest.TestCase):
     def test_microstrip_matches_hammerstad_limit(self):
         """T→0 的微带线：MoM 真空电容 + Hammerstad εeff 应与教科书公式一致。"""
-        from jlc_impedance import analytic
+        from impedance_calculator import analytic
         for w, h, er in ((5, 10, 4.2), (8, 10, 4.2), (20, 10, 4.2)):
             with self.subTest(w=w):
                 zv = mom.z0_vacuum(w, h, None)

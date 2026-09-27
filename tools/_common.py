@@ -4,7 +4,7 @@
 --------
 **工具脚本之间一律不互相 import**（那会让某个脚本变成隐式库，是典型的
 高耦合）。所有共享代码只放在本模块里，方向永远是 ``tools/* → _common``、
-``tools/* → jlc_impedance``。
+``tools/* → impedance_calculator``。
 
 目录约定::
 
@@ -28,8 +28,8 @@ TOOLS = os.path.dirname(os.path.abspath(__file__))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-from jlc_impedance import analytic, calibration                        # noqa: E402
-from jlc_impedance.calibration import compact_inputs, features         # noqa: E402
+from impedance_calculator import analytic, calibration                        # noqa: E402
+from impedance_calculator.calibration import compact_inputs, features         # noqa: E402
 
 # ---- 数据文件（唯一真相）----
 FILE_TRAIN = [os.path.join(DATA, 'calibration.jsonl'),
@@ -40,8 +40,8 @@ FILE_ZEROCOPPER = os.path.join(DATA, 'zerocopper.jsonl')
 FILE_STACKUPS = os.path.join(DATA, 'stackups_cache.json')
 
 # ---- 生成物 ----
-OUT_COEFS = os.path.join(ROOT, 'jlc_impedance', '_coefs.py')
-OUT_KRRS = os.path.join(ROOT, 'jlc_impedance', '_krrs.py')
+OUT_COEFS = os.path.join(ROOT, 'impedance_calculator', '_coefs.py')
+OUT_KRRS = os.path.join(ROOT, 'impedance_calculator', '_krrs.py')
 OUT_CALIB_REPORT = os.path.join(REPORTS, 'calibration_report.md')
 
 #: 实际工作区（Ω）
@@ -215,7 +215,7 @@ def cal_z(mark: str, params: Dict[str, float], names: Sequence[str],
     """校准后的阻抗。
 
     ``krr_store`` 给出时叠加核级残差修正，即**出厂模型的完整两级校准**
-    （与 :func:`jlc_impedance.calibration.apply_correction` 一致）；
+    （与 :func:`impedance_calculator.calibration.apply_correction` 一致）；
     不给就只算线性级，供拟合期内部评估用（此时 beta 是折内新拟合的）。
     """
     zb, _ = analytic.estimate(mark, params, calibrated=False)
@@ -319,13 +319,13 @@ def pearson(a: Sequence[float], b: Sequence[float]) -> float:
 # --------------------------------------------------------------------------- #
 def write_coefs(result: Dict[str, Dict[str, Any]],
                 quality: Dict[str, Dict[str, Any]]) -> None:
-    """写 ``jlc_impedance/_coefs.py``（线性级）。"""
+    """写 ``impedance_calculator/_coefs.py``（线性级）。"""
     lines = [
         '"""离线模型的线性校准系数 —— **自动生成，请勿手改**。',
         '',
         '生成：``python tools/fit_calibration.py``',
         '公式：``Z = Z_base · exp(Σ βᵢ·φᵢ)``，基函数见',
-        '``jlc_impedance/calibration.py`` 的 ``features()``。',
+        '``impedance_calculator/calibration.py`` 的 ``features()``。',
         '"""',
         '',
         '# flake8: noqa',
@@ -350,14 +350,14 @@ def write_coefs(result: Dict[str, Dict[str, Any]],
 
 def write_krrs(stores: Dict[str, Dict[str, Any]],
                quality: Optional[Dict[str, float]] = None) -> None:
-    """写 ``jlc_impedance/_krrs.py``（RBF 核岭回归支持集）。"""
+    """写 ``impedance_calculator/_krrs.py``（RBF 核岭回归支持集）。"""
     quality = quality or {}
     lines = [
         '"""离线模型的 RBF 核岭回归支持集 —— **自动生成，请勿手改**。',
         '',
         '生成：``python tools/fit_calibration.py``',
         '预测：``bias + Σ αᵢ·exp(-γ‖x - Xᵢ‖²)``，其中',
-        '``x = jlc_impedance.calibration.compact_inputs(params)`` 再按 mu/sd 标准化。',
+        '``x = impedance_calculator.calibration.compact_inputs(params)`` 再按 mu/sd 标准化。',
         '',
         '``width_holdout``：整条流水线（线性 + 核）在**独立留出集**上的反算',
         '线宽相对误差（%），即离线模式真实可信度。',

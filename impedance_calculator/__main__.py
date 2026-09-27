@@ -1,4 +1,4 @@
-"""命令行入口：``python -m jlc_impedance ...``"""
+"""命令行入口：``python -m impedance_calculator ...``"""
 
 from __future__ import annotations
 
@@ -127,7 +127,7 @@ def cmd_rules(args, api):
 
 # --------------------------------------------------------------------------- #
 def build_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(prog="jlc_impedance",
+    p = argparse.ArgumentParser(prog="impedance_calculator",
                                 description="PCB 阻抗计算器：叠层 + 目标阻抗 → 线宽"
                                             "（默认离线引擎，加 --online 用嘉立创在线引擎）")
     p.add_argument("--json", action="store_true", help="以 JSON 输出结果")

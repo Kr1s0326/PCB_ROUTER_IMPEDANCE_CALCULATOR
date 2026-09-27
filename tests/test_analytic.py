@@ -10,7 +10,7 @@ import unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from jlc_impedance import analytic, mom                           # noqa: E402
+from impedance_calculator import analytic, mom                           # noqa: E402
 
 
 def strip_params(h1=8.2835, er1=4.40, h2=41.9291, er2=4.38, t1=0.6):

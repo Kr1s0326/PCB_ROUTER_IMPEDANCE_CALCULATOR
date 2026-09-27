@@ -9,7 +9,7 @@ import unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from jlc_impedance.stackup import BUILTIN_STACKUPS, Dielectric, Stackup, match_name  # noqa: E402
+from impedance_calculator.stackup import BUILTIN_STACKUPS, Dielectric, Stackup, match_name  # noqa: E402
 
 
 class TestMatchName(unittest.TestCase):

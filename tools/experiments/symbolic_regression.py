@@ -32,7 +32,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import _common as C
-from jlc_impedance import analytic
+from impedance_calculator import analytic
 
 # --------------------------------------------------------------------------- #
 VAR_NAMES = ['x', 'y', 'tap', 'e', 'w', 'x1', 'er2', 's', 'd', 'c']

@@ -10,8 +10,8 @@ import unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from jlc_impedance import ImpedanceCalculator, calibration         # noqa: E402
-from jlc_impedance.stackup import BUILTIN_STACKUPS                 # noqa: E402
+from impedance_calculator import ImpedanceCalculator, calibration         # noqa: E402
+from impedance_calculator.stackup import BUILTIN_STACKUPS                 # noqa: E402
 
 
 class TestCalibration(unittest.TestCase):

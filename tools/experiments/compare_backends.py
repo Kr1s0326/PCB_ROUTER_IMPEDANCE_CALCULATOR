@@ -36,9 +36,9 @@ sys.path.insert(0, os.path.dirname(TOOLS))
 os.makedirs(os.path.join(TOOLS, 'experiments'), exist_ok=True)
 
 import _common as C                                              # noqa: E402
-from jlc_impedance import analytic                               # noqa: E402
-from jlc_impedance.calibration import compact_inputs, features   # noqa: E402
-from jlc_impedance.mlmodels import GP, KRR, MLP, hierarchical_shrink   # noqa: E402
+from impedance_calculator import analytic                               # noqa: E402
+from impedance_calculator.calibration import compact_inputs, features   # noqa: E402
+from impedance_calculator.mlmodels import GP, KRR, MLP, hierarchical_shrink   # noqa: E402
 
 OUT = os.path.join(C.REPORTS, 'backend_comparison.md')
 OUT_JSON = os.path.join(C.REPORTS, 'backend_comparison.json')

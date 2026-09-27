@@ -9,7 +9,7 @@
 
 典型用法::
 
-    from jlc_impedance import JlcApi, ImpedanceCalculator, stackup
+    from impedance_calculator import JlcApi, ImpedanceCalculator, stackup
 
     st = stackup.BUILTIN_STACKUPS["JLC04161H-7628"]
     with JlcApi() as api:

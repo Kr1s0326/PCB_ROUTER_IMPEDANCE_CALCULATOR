@@ -20,8 +20,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import _common as C                                              # noqa: E402
-from jlc_impedance.api import JlcApi                             # noqa: E402
-from jlc_impedance.stackup import Stackup                        # noqa: E402
+from impedance_calculator.api import JlcApi                             # noqa: E402
+from impedance_calculator.stackup import Stackup                        # noqa: E402
 
 LAYERS = [2, 4, 6, 8, 10]
 THICKNESS = 1.6

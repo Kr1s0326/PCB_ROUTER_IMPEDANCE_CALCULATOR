@@ -9,8 +9,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import _common as C
 
-from jlc_impedance import ImpedanceCalculator, JlcApi
-from jlc_impedance.stackup import BUILTIN_STACKUPS
+from impedance_calculator import ImpedanceCalculator, JlcApi
+from impedance_calculator.stackup import BUILTIN_STACKUPS
 
 MM = 0.0254
 STACKS = ["JLC04161H-3313", "JLC04161H-7628", "JLC04161H-2116", "JLC0216A"]

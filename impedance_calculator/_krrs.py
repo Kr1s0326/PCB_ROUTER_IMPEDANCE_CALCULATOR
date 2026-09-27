@@ -2,7 +2,7 @@
 
 生成：``python tools/fit_calibration.py``
 预测：``bias + Σ αᵢ·exp(-γ‖x - Xᵢ‖²)``，其中
-``x = jlc_impedance.calibration.compact_inputs(params)`` 再按 mu/sd 标准化。
+``x = impedance_calculator.calibration.compact_inputs(params)`` 再按 mu/sd 标准化。
 
 ``width_holdout``：整条流水线（线性 + 核）在**独立留出集**上的反算
 线宽相对误差（%），即离线模式真实可信度。
