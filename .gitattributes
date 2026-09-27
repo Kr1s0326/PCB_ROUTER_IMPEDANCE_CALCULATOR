@@ -1,0 +1,16 @@
+# 统一用 LF。Windows 上 git 默认 core.autocrlf=true 会把文本换成 CRLF，
+# 而这些文件（Python / JSONL / KiCad 模板）都是按 LF 生成的，跨平台要一致。
+* text=auto eol=lf
+
+# 二进制（不要做换行转换）
+*.png  binary
+*.jpg  binary
+*.pdf  binary
+*.zip  binary
+
+# 生成物：GitHub 语言统计里不要把报告算进去
+reports/*.json  linguist-generated=true
+reports/*.html  linguist-generated=true
+jlc_impedance/_coefs.py  linguist-generated=true
+jlc_impedance/_krrs.py   linguist-generated=true
+data/*.jsonl             linguist-generated=true
