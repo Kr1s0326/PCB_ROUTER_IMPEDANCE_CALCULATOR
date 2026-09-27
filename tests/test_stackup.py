@@ -1,7 +1,5 @@
 """叠层解析与 SI9000 参数映射。"""
 
-from __future__ import annotations
-
 import os
 import sys
 import unittest

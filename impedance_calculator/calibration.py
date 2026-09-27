@@ -12,23 +12,20 @@
 没有校准数据时 ``CALIBRATION`` 为空，:func:`apply_correction` 原样返回基底值。
 """
 
-from __future__ import annotations
-
 import math
-from typing import Dict, List, Optional, Tuple
 
 try:                                                    # 生成的系数表
     from ._coefs import CALIBRATION
 except ImportError:                                     # pragma: no cover
-    CALIBRATION: Dict[str, Dict[str, list]] = {}
+    CALIBRATION: dict[str, dict[str, list]] = {}
 
 try:                                                    # 生成的核方法支持集
     from ._krrs import KRRS
 except ImportError:                                     # pragma: no cover
-    KRRS: Dict[str, dict] = {}
+    KRRS: dict[str, dict] = {}
 
 
-def compact_inputs(p: Dict[str, float]) -> List[float]:
+def compact_inputs(p: dict[str, float]) -> list[float]:
     """核方法用的紧凑物理输入（与 :func:`features` 同一套无量纲量）。"""
     w = (float(p["W1"]) + float(p["W2"])) / 2.0
     h1 = float(p["H1"])
@@ -44,7 +41,7 @@ def compact_inputs(p: Dict[str, float]) -> List[float]:
     return v
 
 
-def krr_predict(store: dict, p: Dict[str, float]) -> float:
+def krr_predict(store: dict, p: dict[str, float]) -> float:
     """用存下来的支持集算 RBF 核岭回归的预测值（残差修正项）。"""
     x = compact_inputs(p)
     mu, sd = store["mu"], store["sd"]
@@ -56,9 +53,9 @@ def krr_predict(store: dict, p: Dict[str, float]) -> float:
     return s
 
 
-def features(p: Dict[str, float]) -> Dict[str, float]:
+def features(p: dict[str, float]) -> dict[str, float]:
     """基函数库（拟合脚本与推理时必须完全一致）。"""
-    f: Dict[str, float] = {}
+    f: dict[str, float] = {}
     w = (float(p["W1"]) + float(p["W2"])) / 2.0
     h1, er1, t1 = float(p["H1"]), float(p["Er1"]), float(p["T1"])
     x = math.log(w / h1)
@@ -120,7 +117,7 @@ def features(p: Dict[str, float]) -> Dict[str, float]:
     return f
 
 
-def width_cv(impedance_type: str) -> Optional[float]:
+def width_cv(impedance_type: str) -> float | None:
     """该结构「反算线宽」的**独立留出集**相对误差（%）。
 
     优先用核方法那一级存下来的实测值（整条流水线 线性+核），
@@ -152,8 +149,8 @@ def quality_note(impedance_type: str) -> str:
     return "离线模型：此结构可达 ±%.0f%%，强烈建议用在线模式" % cv
 
 
-def apply_correction(impedance_type: str, params: Dict[str, float],
-                     z_base: float) -> Tuple[float, float]:
+def apply_correction(impedance_type: str, params: dict[str, float],
+                     z_base: float) -> tuple[float, float]:
     """返回 ``(修正后的 Z, 修正系数)``。
 
     两级：对数线性（前向选择出来的特征） + RBF 核岭回归修残差。

@@ -1,7 +1,5 @@
 """物理基底与正/反算。"""
 
-from __future__ import annotations
-
 import math
 import os
 import sys

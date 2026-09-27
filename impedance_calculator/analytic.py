@@ -30,10 +30,8 @@
    要逐位一致请用 :class:`impedance_calculator.api.JlcApi`（在线模式）。
 """
 
-from __future__ import annotations
-
 import math
-from typing import Callable, Dict, Optional, Tuple
+from collections.abc import Callable
 
 from . import calibration, mom
 
@@ -89,7 +87,7 @@ def _thickness_adjusted(W: float, T: float) -> float:
 #  单端模型
 # --------------------------------------------------------------------------- #
 def microstrip(H: float, Er: float, W1: float, W2: float, T: float,
-               coated: Optional[Tuple[float, float, float, float]] = None) -> Tuple[float, float]:
+               coated: tuple[float, float, float, float] | None = None) -> tuple[float, float]:
     """表层微带线。``coated=(C1, C2, C3, CEr)`` 时把阻焊也算进去。
 
     返回 ``(Z0, Er_eff)``。
@@ -106,7 +104,7 @@ def microstrip(H: float, Er: float, W1: float, W2: float, T: float,
 
 
 def _stripline_height(H1: float, Er1: float, H2: float,
-                      Er2: float) -> Tuple[float, float]:
+                      Er2: float) -> tuple[float, float]:
     """偏置带状线的「等效微带高度」与「等效介电常数」。"""
     b = H1 + H2
     h_min = min(H1, H2)
@@ -115,8 +113,8 @@ def _stripline_height(H1: float, Er1: float, H2: float,
     return h_eff, er_eff
 
 
-def stripline(H1: float, Er1: float, H2: Optional[float], Er2: Optional[float],
-              W1: float, W2: float, T: float, **kw) -> Tuple[float, float]:
+def stripline(H1: float, Er1: float, H2: float | None, Er2: float | None,
+              W1: float, W2: float, T: float, **kw) -> tuple[float, float]:
     """带状线（内层）：**用 MoM 精确解**（T→0）+ 铜厚等效加宽。
 
     偏置带状线是标准二维场问题，``impedance_calculator.mom`` 里那套方法矩能算到
@@ -129,8 +127,8 @@ def stripline(H1: float, Er1: float, H2: Optional[float], Er2: Optional[float],
     return mom.z0_single(we, we, H1, Er1, H2, Er2, **kw)
 
 
-def stripline_diff(H1: float, Er1: float, H2: Optional[float], Er2: Optional[float],
-                   W1: float, W2: float, S1: float, T: float, **kw) -> Tuple[float, float]:
+def stripline_diff(H1: float, Er1: float, H2: float | None, Er2: float | None,
+                   W1: float, W2: float, S1: float, T: float, **kw) -> tuple[float, float]:
     """差分带状线：**奇模 MoM 精确解**（T→0）+ 铜厚等效加宽。
 
     差分对在对称面是电壁（V1 = -V2），所以镜像电荷反号；
@@ -143,9 +141,9 @@ def stripline_diff(H1: float, Er1: float, H2: Optional[float], Er2: Optional[flo
 
 
 def coplanar(H: float, Er: float, W1: float, W2: float, D1: float, T: float,
-             coated: Optional[Tuple[float, float, float, float]] = None,
-             h_back: Optional[float] = None,
-             er_back: Optional[float] = None) -> Tuple[float, float]:
+             coated: tuple[float, float, float, float] | None = None,
+             h_back: float | None = None,
+             er_back: float | None = None) -> tuple[float, float]:
     """共面波导（带下地参考）。
 
     * ``D1``：线与同层地铜的间距；
@@ -204,8 +202,8 @@ def differential(z_single: float, spacing: float, height: float, inner: bool) ->
 # --------------------------------------------------------------------------- #
 #  统一入口
 # --------------------------------------------------------------------------- #
-def estimate(impedance_type: str, params: Dict[str, float],
-             calibrated: bool = True) -> Tuple[float, float]:
+def estimate(impedance_type: str, params: dict[str, float],
+             calibrated: bool = True) -> tuple[float, float]:
     """按模型名估算 ``(Z0, Er_eff)``。参数名与 :mod:`.structures` 一致。
 
     ``calibrated=True`` 会套用 :mod:`.calibration` 的校准系数（推荐）；
@@ -217,7 +215,7 @@ def estimate(impedance_type: str, params: Dict[str, float],
     return z, eeff
 
 
-def estimate_base(impedance_type: str, params: Dict[str, float]) -> Tuple[float, float]:
+def estimate_base(impedance_type: str, params: dict[str, float]) -> tuple[float, float]:
     """按模型名估算 ``(Z0, Er_eff)``。参数名与 :mod:`.structures` 一致。"""
     p = params
     T = float(p.get("T1", 1.6))
@@ -263,9 +261,9 @@ def estimate_base(impedance_type: str, params: Dict[str, float]) -> Tuple[float,
     return z, eeff
 
 
-def solve_width(impedance_type: str, params: Dict[str, float], target: float,
+def solve_width(impedance_type: str, params: dict[str, float], target: float,
                 w2_delta: float = 0.5, lo: float = 1.0,
-                hi: float = 200.0) -> Optional[float]:
+                hi: float = 200.0) -> float | None:
     """二分法反算线宽（W1，mil）；如果区间内无解返回 ``None``。"""
     def z_of(w1: float) -> float:
         q = dict(params)
@@ -286,8 +284,8 @@ def solve_width(impedance_type: str, params: Dict[str, float], target: float,
     return (lo + hi) / 2.0
 
 
-def solve_spacing(impedance_type: str, params: Dict[str, float], target: float,
-                  lo: float = 2.5, hi: float = 100.0) -> Optional[float]:
+def solve_spacing(impedance_type: str, params: dict[str, float], target: float,
+                  lo: float = 2.5, hi: float = 100.0) -> float | None:
     """二分法反算差分间距（S1，mil）；无解返回 ``None``。"""
     def z_of(s: float) -> float:
         q = dict(params)

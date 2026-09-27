@@ -26,8 +26,6 @@
 本模块只用标准库（urllib + socket），因此可以直接跑。
 """
 
-from __future__ import annotations
-
 import base64
 import json
 import os
@@ -39,7 +37,8 @@ import urllib.error
 import urllib.request
 import uuid as _uuid
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Sequence
+from collections.abc import Sequence
+from typing import Any, Optional
 
 DEFAULT_BASE = "https://tools.jlc.com/api/jlcTools"
 ORIGIN = "https://tools.jlc.com"
@@ -110,7 +109,7 @@ class _WebSocket:
         head += mask
         self.sock.sendall(bytes(head) + bytes(b ^ mask[i % 4] for i, b in enumerate(data)))
 
-    def recv(self, timeout: Optional[float] = None) -> str:
+    def recv(self, timeout: float | None = None) -> str:
         if timeout is not None:
             self.sock.settimeout(timeout)
         while True:
@@ -153,22 +152,22 @@ class _WebSocket:
 @dataclass
 class CalcResult:
     ok: bool
-    impedance: Optional[float] = None       # dImpedance，Ω
-    er_eff: Optional[float] = None          # 有效介电常数
-    delay: Optional[float] = None           # ps/inch
-    inductance: Optional[float] = None      # nH/inch
-    solved: Dict[str, float] = field(default_factory=dict)  # 反算得到的几何
+    impedance: float | None = None       # dImpedance，Ω
+    er_eff: float | None = None          # 有效介电常数
+    delay: float | None = None           # ps/inch
+    inductance: float | None = None      # nH/inch
+    solved: dict[str, float] = field(default_factory=dict)  # 反算得到的几何
     status: int = -1
     error: str = ""
-    raw: Dict[str, Any] = field(default_factory=dict)
+    raw: dict[str, Any] = field(default_factory=dict)
 
     @property
-    def width(self) -> Optional[float]:
+    def width(self) -> float | None:
         """反算出的线宽 W1（mil）。"""
         return self.solved.get("W1")
 
     @property
-    def spacing(self) -> Optional[float]:
+    def spacing(self) -> float | None:
         """反算出的线距 S1 或线铜距离 D1（mil）。"""
         return self.solved.get("S1", self.solved.get("D1"))
 
@@ -191,11 +190,11 @@ class JlcApi:
         self.base = base.rstrip("/")
         self.timeout = timeout
         self.uuid = str(_uuid.uuid4())
-        self._ws: Optional[_WebSocket] = None
-        self._cache: Dict[str, Any] = {}
+        self._ws: _WebSocket | None = None
+        self._cache: dict[str, Any] = {}
 
     # ---------- HTTP ---------- #
-    def post(self, path: str, body: Dict[str, Any]) -> Dict[str, Any]:
+    def post(self, path: str, body: dict[str, Any]) -> dict[str, Any]:
         data = json.dumps(body).encode()
         req = urllib.request.Request(
             self.base + "/" + path.lstrip("/"), data=data,
@@ -227,7 +226,7 @@ class JlcApi:
         self.close()
 
     # ---------- 查询 ---------- #
-    def pictures(self) -> List[Dict[str, Any]]:
+    def pictures(self) -> list[dict[str, Any]]:
         """官网 12 个 SI9000 结构（含参数默认值与说明）。"""
         if "pictures" not in self._cache:
             r = self.post("impedance/selectPageImpedancePicture",
@@ -236,7 +235,7 @@ class JlcApi:
         return self._cache["pictures"]
 
     def templates(self, layers: int, thickness: float, outer_cu: float = 1.0,
-                  inner_cu: float = 0.5, board_type: int = 1) -> List[Dict[str, Any]]:
+                  inner_cu: float = 0.5, board_type: int = 1) -> list[dict[str, Any]]:
         """按层数/板厚/铜厚查询嘉立创的叠层方案（如 JLC04161H-7628）。"""
         body = {"pageNum": 1, "pageSize": 99999, "plateLayerNumber": layers,
                 "plateThickness": thickness, "cuprumThickness": outer_cu,
@@ -246,7 +245,7 @@ class JlcApi:
         r = self.post("impedance/selectPageImpedanceDefaultTemplate", body)
         return (r.get("body") or r.get("data") or {}).get("list", [])
 
-    def config_copper(self) -> List[Dict[str, Any]]:
+    def config_copper(self) -> list[dict[str, Any]]:
         """铜厚 / 蚀刻线宽增量（W1-W2）配置表。"""
         if "copper" not in self._cache:
             r = self.post("impedance/impedance-config/copper-trace-width/list",
@@ -254,7 +253,7 @@ class JlcApi:
             self._cache["copper"] = r.get("data", [])
         return self._cache["copper"]
 
-    def config_coverlay(self) -> List[Dict[str, Any]]:
+    def config_coverlay(self) -> list[dict[str, Any]]:
         """阻焊厚度 C1/C2/C3 配置表。"""
         if "coverlay" not in self._cache:
             r = self.post("impedance/impedance-config/coverlay/list",
@@ -262,7 +261,7 @@ class JlcApi:
             self._cache["coverlay"] = r.get("data", [])
         return self._cache["coverlay"]
 
-    def limits(self) -> Dict[str, Dict[str, float]]:
+    def limits(self) -> dict[str, dict[str, float]]:
         """各参数的取值范围。"""
         if "limits" not in self._cache:
             r = self.post("impedance/selectImpedanceDefaultValue",
@@ -274,7 +273,7 @@ class JlcApi:
         return self._cache["limits"]
 
     # ---------- 计算 ---------- #
-    def _request(self, mark: str, arg: Dict[str, Any]) -> CalcResult:
+    def _request(self, mark: str, arg: dict[str, Any]) -> CalcResult:
         access_id = str(_uuid.uuid4())
         ws = self._socket()
         self.post("impedance/calc", {
@@ -309,13 +308,13 @@ class JlcApi:
                 raw=payload,
             )
 
-    def calculate(self, impedance_type: str, params: Dict[str, float]) -> CalcResult:
+    def calculate(self, impedance_type: str, params: dict[str, float]) -> CalcResult:
         """正算：给几何，返回阻抗。``params`` 里必须带齐该模型的参数。"""
         arg = {k: float(v) for k, v in params.items()}
         arg["dCalculateMode"] = 3
         return self._request(impedance_type, arg)
 
-    def solve(self, impedance_type: str, param: str, params: Dict[str, float],
+    def solve(self, impedance_type: str, param: str, params: dict[str, float],
               target: float, lower: float = 1.0, upper: float = 200.0) -> CalcResult:
         """反算：给定目标阻抗，求 ``param``（W2 / S1 / D1）。"""
 

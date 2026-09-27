@@ -1,9 +1,8 @@
 """把「叠层 + 目标阻抗」变成「线宽 / 线距」的高层接口。"""
 
-from __future__ import annotations
-
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Sequence, Tuple
+from collections.abc import Sequence
+from typing import Any, Optional
 
 from . import analytic, calibration
 from .api import CalcResult, JlcApi
@@ -17,28 +16,28 @@ MM_PER_MIL = 0.0254
 class Solution:
     impedance_type: str
     layer: str
-    target: Optional[float] = None
+    target: float | None = None
     kind: str = "single"
-    width: Optional[float] = None          # W1，mil
-    spacing: Optional[float] = None        # S1，mil（差分）
-    gap: Optional[float] = None            # D1，mil（共面）
-    impedance: Optional[float] = None      # 实际阻抗，Ω
+    width: float | None = None          # W1，mil
+    spacing: float | None = None        # S1，mil（差分）
+    gap: float | None = None            # D1，mil（共面）
+    impedance: float | None = None      # 实际阻抗，Ω
     engine: str = ""                       # online / analytic
-    params: Dict[str, float] = field(default_factory=dict)
+    params: dict[str, float] = field(default_factory=dict)
     status: int = -1
     error: str = ""
     note: str = ""
 
     # -- 便于阅读的输出 --
     @property
-    def width_mm(self) -> Optional[float]:
+    def width_mm(self) -> float | None:
         return None if self.width is None else self.width * MM_PER_MIL
 
     @property
-    def spacing_mm(self) -> Optional[float]:
+    def spacing_mm(self) -> float | None:
         return None if self.spacing is None else self.spacing * MM_PER_MIL
 
-    def as_dict(self) -> Dict[str, Any]:
+    def as_dict(self) -> dict[str, Any]:
         return {
             "impedance_type": self.impedance_type,
             "layer": self.layer,
@@ -84,9 +83,9 @@ class ImpedanceCalculator:
         不传则用官方文档默认值（外层 1oz：T1=1.6mil，C1/C2/C3=1.2/0.6/1.2，CEr=3.8）
     """
 
-    def __init__(self, stackup: Stackup, api: Optional[JlcApi] = None,
-                 copper_config: Optional[Sequence[Dict[str, Any]]] = None,
-                 coverlay_config: Optional[Sequence[Dict[str, Any]]] = None,
+    def __init__(self, stackup: Stackup, api: JlcApi | None = None,
+                 copper_config: Sequence[dict[str, Any]] | None = None,
+                 coverlay_config: Sequence[dict[str, Any]] | None = None,
                  cer: float = 3.8):
         self.stackup = stackup
         self.api = api
@@ -99,16 +98,16 @@ class ImpedanceCalculator:
     def engine(self) -> str:
         return "online" if self.api is not None else "analytic"
 
-    def _geometry(self, layer: str) -> Dict[str, float]:
+    def _geometry(self, layer: str) -> dict[str, float]:
         return self.stackup.si9000_geometry(layer)
 
     def _build_params(self, layer: str, st: Structure, width: float,
-                      spacing: Optional[float] = None,
-                      gap: Optional[float] = None) -> Dict[str, float]:
+                      spacing: float | None = None,
+                      gap: float | None = None) -> dict[str, float]:
         i = self.stackup.index_of(layer)
         g = dict(self._geometry(layer))
         delta = self.stackup.w2_delta(i, self.copper_config)
-        p: Dict[str, float] = {
+        p: dict[str, float] = {
             "H1": g["H1"], "Er1": g["Er1"],
             "W1": float(width), "W2": float(width) - delta,
             "T1": g["T1"],
@@ -130,8 +129,8 @@ class ImpedanceCalculator:
 
     # ------------------------------------------------------------------ #
     def forward(self, layer: str, width: float = 8.0, kind: str = "single",
-                coplanar: bool = False, spacing: Optional[float] = None,
-                gap: Optional[float] = None, coated: bool = True) -> Solution:
+                coplanar: bool = False, spacing: float | None = None,
+                gap: float | None = None, coated: bool = True) -> Solution:
         """正算：给定线宽，算阻抗。"""
         st = pick(kind, "outer" if self.stackup.is_outer(self.stackup.index_of(layer)) else "inner",
                   coplanar=coplanar, coated=coated)
@@ -150,10 +149,10 @@ class ImpedanceCalculator:
                         note=calibration.quality_note(st.impedance_type))
 
     def solve(self, layer: str, target: float, kind: str = "single",
-              coplanar: bool = False, spacing: Optional[float] = None,
-              gap: Optional[float] = None, coated: bool = True,
-              width: Optional[float] = None,
-              bounds: Tuple[float, float] = (1.0, 200.0)) -> Solution:
+              coplanar: bool = False, spacing: float | None = None,
+              gap: float | None = None, coated: bool = True,
+              width: float | None = None,
+              bounds: tuple[float, float] = (1.0, 200.0)) -> Solution:
         """反算线宽；差分时 ``spacing`` 必须给定（也可给 ``width`` 反算线距）。
 
         返回的 :class:`Solution` 中 ``impedance`` 是后台回代（或公式回代）的实际值。

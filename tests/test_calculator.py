@@ -1,7 +1,5 @@
 """校准层与高层门面。"""
 
-from __future__ import annotations
-
 import math
 import os
 import sys

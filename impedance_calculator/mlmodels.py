@@ -15,11 +15,9 @@
 全部纯 Python（不依赖 numpy/sklearn）。
 """
 
-from __future__ import annotations
-
 import math
 import random
-from typing import Dict, List, Optional, Sequence, Tuple
+from collections.abc import Sequence
 
 # --------------------------------------------------------------------------- #
 #  基础工具
@@ -35,7 +33,7 @@ def standardize_apply(X, mu, sd):
     return [[(r[j] - mu[j]) / sd[j] for j in range(len(mu))] for r in X]
 
 
-def _chol(A: Sequence[Sequence[float]]) -> Optional[List[List[float]]]:
+def _chol(A: Sequence[Sequence[float]]) -> list[list[float]] | None:
     """Cholesky 分解 A = L·Lᵗ（A 对称正定）。"""
     n = len(A)
     L = [[0.0] * n for _ in range(n)]
@@ -86,10 +84,10 @@ def median_gamma(Xs: Sequence[Sequence[float]], sample: int = 60) -> float:
 class KRR:
     name = 'krr'
 
-    def __init__(self, reg: float = 1e-2, gamma: Optional[float] = None):
+    def __init__(self, reg: float = 1e-2, gamma: float | None = None):
         self.reg, self.gamma = reg, gamma
-        self.Xs: List[List[float]] = []
-        self.alpha: List[float] = []
+        self.Xs: list[list[float]] = []
+        self.alpha: list[float] = []
         self.mu = self.sd = None
 
     def fit(self, X, y):
@@ -124,14 +122,14 @@ class KRR:
 class GP:
     name = 'gp'
 
-    def __init__(self, gamma: Optional[float] = None, noise: Optional[float] = None,
+    def __init__(self, gamma: float | None = None, noise: float | None = None,
                  signal: float = 1.0):
         self.gamma, self.noise, self.signal = gamma, noise, signal
         self.mu = self.sd = None
-        self.Xs: List[List[float]] = []
+        self.Xs: list[list[float]] = []
         self.L = None
-        self.alpha: List[float] = []
-        self.y: List[float] = []
+        self.alpha: list[float] = []
+        self.y: list[float] = []
         self.ymean = 0.0
 
     def _kmat(self, A, B=None, add_noise=0.0):
@@ -357,8 +355,8 @@ def _train_mlp(X, y, hidden, epochs, lr, l2, seed, val_frac):
     return predict
 
 
-def hierarchical_shrink(betas: Dict[str, List[float]], counts: Dict[str, int],
-                        n0: float = 60.0) -> Dict[str, List[float]]:
+def hierarchical_shrink(betas: dict[str, list[float]], counts: dict[str, int],
+                        n0: float = 60.0) -> dict[str, list[float]]:
     """把每个结构的系数向"全体平均"收缩（James–Stein 式）。
 
     权重 ``w = n/(n+n0)``：样本多的结构基本不动，样本少的向公共形状靠。

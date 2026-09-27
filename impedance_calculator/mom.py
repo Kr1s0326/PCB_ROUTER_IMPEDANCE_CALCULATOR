@@ -36,10 +36,8 @@
 校验：``S -> ∞`` 时 ``Zdiff -> 2·Z0``；``S -> 0`` 时耦合最强。
 """
 
-from __future__ import annotations
-
 import math
-from typing import List, Optional, Sequence, Tuple
+from collections.abc import Sequence
 
 C_LIGHT = 299792458.0
 EPS0 = 8.8541878128e-12
@@ -50,13 +48,13 @@ M_DEFAULT = 56
 N_DEFAULT = 7
 
 
-def _gc_nodes(m: int) -> Tuple[List[float], List[float]]:
+def _gc_nodes(m: int) -> tuple[list[float], list[float]]:
     """Gauss-Chebyshev 第一类节点（含 1/sqrt(1-ξ²) 权）。"""
     return ([math.cos((2 * i + 1) * math.pi / (2 * m)) for i in range(m)],
             [math.pi / m] * m)
 
 
-def _kernels(h1m: float, h2m: Optional[float]):
+def _kernels(h1m: float, h2m: float | None):
     """返回 ``(K(Δ), C_m)``，其中 ``K(Δ) ≈ [ln(C_m) - ln|Δ|]/(2πε₀)``。"""
     if h2m is None:
         def ker(dx):
@@ -72,7 +70,7 @@ def _kernels(h1m: float, h2m: Optional[float]):
     return ker, 2.0 * l * math.sin(math.pi * h1m / l) / math.pi
 
 
-def _solve(A: Sequence[Sequence[float]], b: Sequence[float]) -> Optional[List[float]]:
+def _solve(A: Sequence[Sequence[float]], b: Sequence[float]) -> list[float] | None:
     n = len(A)
     M = [list(A[i]) + [b[i]] for i in range(n)]
     for col in range(n):
@@ -91,8 +89,8 @@ def _solve(A: Sequence[Sequence[float]], b: Sequence[float]) -> Optional[List[fl
     return [M[i][n] / M[i][i] for i in range(n)]
 
 
-def capacitance_vacuum(W: float, h1: float, h2: Optional[float] = None,
-                       offset: float = 0.0, wall: Optional[str] = None,
+def capacitance_vacuum(W: float, h1: float, h2: float | None = None,
+                       offset: float = 0.0, wall: str | None = None,
                        m: int = M_DEFAULT, n: int = N_DEFAULT) -> float:
     """零铜厚、均匀介质的**单位长度电容**（F/m，V=1）。
 
@@ -147,7 +145,7 @@ def capacitance_vacuum(W: float, h1: float, h2: Optional[float] = None,
     return a * math.pi * c[0]
 
 
-def z0_vacuum(W: float, h1: float, h2: Optional[float] = None, **kw) -> float:
+def z0_vacuum(W: float, h1: float, h2: float | None = None, **kw) -> float:
     """零铜厚、真空的阻抗（Ω）。"""
     return 1.0 / (C_LIGHT * capacitance_vacuum(W, h1, h2, **kw))
 
@@ -158,7 +156,7 @@ def effective_er(er1: float, h1: float, er2: float, h2: float) -> float:
 
 
 def z0_single(W1: float, W2: float, h1: float, er1: float,
-              h2: Optional[float] = None, er2: Optional[float] = None, **kw) -> Tuple[float, float]:
+              h2: float | None = None, er2: float | None = None, **kw) -> tuple[float, float]:
     """零铜厚单端阻抗（Ω）与等效介电常数。"""
     W = (W1 + W2) / 2.0
     zv = z0_vacuum(W, h1, h2, **kw)
@@ -169,7 +167,7 @@ def z0_single(W1: float, W2: float, h1: float, er1: float,
 
 
 def z0_diff(W1: float, W2: float, S: float, h1: float, er1: float,
-            h2: Optional[float] = None, er2: Optional[float] = None, **kw) -> Tuple[float, float]:
+            h2: float | None = None, er2: float | None = None, **kw) -> tuple[float, float]:
     """零铜厚差分阻抗（Ω）与等效介电常数（奇模）::
 
         Zdiff = 2 · Z_odd,   Z_odd = Z_vac,odd / sqrt(Er_eff)

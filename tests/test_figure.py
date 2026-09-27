@@ -12,8 +12,6 @@
 「脚本现在能生成的图」不会悄悄脱节。
 """
 
-from __future__ import annotations
-
 import json
 import os
 import sys

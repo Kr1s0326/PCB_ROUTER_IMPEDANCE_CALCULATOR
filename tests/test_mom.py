@@ -4,8 +4,6 @@
 基准值是 ``tools/check_engine.py`` 从官网采下来的 ``data/zerocopper.jsonl``。
 """
 
-from __future__ import annotations
-
 import json
 import os
 import sys

@@ -1,11 +1,8 @@
 """命令行入口：``python -m impedance_calculator ...``"""
 
-from __future__ import annotations
-
 import argparse
 import json
 import sys
-from typing import List, Optional
 
 from .api import JlcApi, JlcApiError
 from .calculator import ImpedanceCalculator
@@ -13,7 +10,7 @@ from .stackup import BUILTIN_STACKUPS, Stackup
 from .structures import STRUCTURES
 
 
-def _load_stackup(args, api: Optional[JlcApi]) -> Stackup:
+def _load_stackup(args, api: JlcApi | None) -> Stackup:
     key = args.stackup
     if key in BUILTIN_STACKUPS:
         return BUILTIN_STACKUPS[key]
@@ -27,7 +24,7 @@ def _load_stackup(args, api: Optional[JlcApi]) -> Stackup:
     raise SystemExit("在线叠层里也没找到 %r" % key)
 
 
-def _calc(args, api: Optional[JlcApi]) -> ImpedanceCalculator:
+def _calc(args, api: JlcApi | None) -> ImpedanceCalculator:
     st = _load_stackup(args, api)
     copper = coverlay = None
     if api is not None:
@@ -98,7 +95,7 @@ def cmd_forward(args, api):
 def cmd_rules(args, api):
     """输出可以直接贴进 KiCad .kicad_dru 的 netclass 规则片段。"""
     calc = _calc(args, api)
-    lines: List[str] = ["(version 1)", ""]
+    lines: list[str] = ["(version 1)", ""]
     for layer in args.layer:
         single = calc.solve(layer, args.z0_single)
         if single.width is None:
@@ -184,7 +181,7 @@ def build_parser() -> argparse.ArgumentParser:
     return p
 
 
-def main(argv: Optional[List[str]] = None) -> int:
+def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     api = JlcApi() if getattr(args, "online", False) else None
     try:

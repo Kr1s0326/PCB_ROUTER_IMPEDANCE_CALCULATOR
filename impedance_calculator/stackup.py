@@ -16,10 +16,9 @@
 这里的取值与官网完全一致（例如 JLC04161H-3313 的 L1：H1 = 0.0994 mm = 3.9134 mil，Er1 = 4.1）。
 """
 
-from __future__ import annotations
-
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Sequence
+from collections.abc import Sequence
+from typing import Any, Optional
 
 MM_PER_MIL = 0.0254
 
@@ -61,7 +60,7 @@ class Dielectric:
     dk: float
     material: str = ""
     #: 若这层介质属于某个「芯板」，记录它上下两面导体的下标 (上, 下)
-    owner: Optional[tuple] = None
+    owner: tuple | None = None
 
 
 @dataclass
@@ -70,8 +69,8 @@ class Stackup:
 
     code: str
     name: str
-    conductors: List[Conductor]
-    dielectrics: List[Dielectric]          # len == len(conductors) - 1
+    conductors: list[Conductor]
+    dielectrics: list[Dielectric]          # len == len(conductors) - 1
     outer_oz: float = 1.0
     inner_oz: float = 0.5
 
@@ -84,7 +83,7 @@ class Stackup:
     def total_dielectric_mm(self) -> float:
         return sum(d.thickness_mm for d in self.dielectrics)
 
-    def layer_names(self) -> List[str]:
+    def layer_names(self) -> list[str]:
         n = self.copper_layers
         if n == 1:
             return ["L1"]
@@ -113,7 +112,7 @@ class Stackup:
         return index in (0, self.copper_layers - 1)
 
     # ------------------------------------------------------------------ #
-    def si9000_geometry(self, layer: str) -> Dict[str, float]:
+    def si9000_geometry(self, layer: str) -> dict[str, float]:
         """返回该层走线的 ``H1/Er1[/H2/Er2]/T1``（与官网的计算逻辑一致）。
 
         外层：``H1`` = 到相邻参考层的介质。
@@ -123,7 +122,7 @@ class Stackup:
         i = self.index_of(layer)
         if not 0 <= i < self.copper_layers:
             raise ValueError("层号越界: %s" % layer)
-        out: Dict[str, float] = {}
+        out: dict[str, float] = {}
         if self.is_outer(i):
             d = self.dielectrics[i if i == 0 else i - 1]
             out["H1"] = mil(d.thickness_mm)
@@ -147,7 +146,7 @@ class Stackup:
         out["T1"] = self.t1_for(index=i)
         return out
 
-    def t1_for(self, index: int, copper_config: Optional[Sequence[Dict[str, Any]]] = None) -> float:
+    def t1_for(self, index: int, copper_config: Sequence[dict[str, Any]] | None = None) -> float:
         """铜厚 T1（mil）。优先用嘉立创的配置表，取不到就用官方文档默认值。"""
         outer = self.is_outer(index)
         oz = self.outer_oz if outer else self.inner_oz
@@ -163,7 +162,7 @@ class Stackup:
             return table[oz]
         return 1.6 if outer else (1.2 if oz >= 1.18 else 0.6)
 
-    def w2_delta(self, index: int, copper_config: Optional[Sequence[Dict[str, Any]]] = None) -> float:
+    def w2_delta(self, index: int, copper_config: Sequence[dict[str, Any]] | None = None) -> float:
         """W1 - W2（蚀刻线宽增量，mil）。"""
         outer = self.is_outer(index)
         oz = self.outer_oz if outer else self.inner_oz
@@ -176,7 +175,7 @@ class Stackup:
                 return float(row["traceWidthDelta"])
         return 0.7 if outer else 0.5
 
-    def coverlay(self, index: int, coverlay_config: Optional[Sequence[Dict[str, Any]]] = None):
+    def coverlay(self, index: int, coverlay_config: Sequence[dict[str, Any]] | None = None):
         """(C1, C2, C3)（mil）；内层返回 ``None``。"""
         if not self.is_outer(index):
             return None
@@ -193,10 +192,10 @@ class Stackup:
 
     # ------------------------------------------------------------------ #
     @classmethod
-    def from_template(cls, tpl: Dict[str, Any]) -> "Stackup":
+    def from_template(cls, tpl: dict[str, Any]) -> "Stackup":
         """由嘉立创 ``selectPageImpedanceDefaultTemplate`` 的单条记录构造叠层。"""
-        conductors: List[Conductor] = []
-        dielectrics: List[Dielectric] = []
+        conductors: list[Conductor] = []
+        dielectrics: list[Dielectric] = []
 
         def add_conductor(name: str, thick_mm: float) -> None:
             conductors.append(Conductor(name, float(thick_mm or 0.0)))
@@ -224,7 +223,7 @@ class Stackup:
             # 连续多张 PP（中间没有铜）在 SI9000 里就是**一层介质**：
             # 厚度相加、介电常数取算术平均（与官网 getThicknessBetween /
             # getAverageDielectricConstant 的做法一致）
-            merged: List[Dielectric] = []
+            merged: list[Dielectric] = []
             for d in dielectrics:
                 if merged and merged[-1].owner is None and d.owner is None:
                     prev = merged[-1]
@@ -284,7 +283,7 @@ def _builtin(code, name, diel, outer=1.0, inner=0.5, cu=(0.035, 0.0152), cores=N
     return Stackup(code, name, conductors, dielectrics, outer, inner)
 
 
-BUILTIN_STACKUPS: Dict[str, Stackup] = {
+BUILTIN_STACKUPS: dict[str, Stackup] = {
     "JLC04161H-3313": _builtin(
         "20211110053321", "JLC04161H-3313 (通用/成品板厚1.56mm±10%)",
         [(0.0994, 4.10), (1.2650, 4.42), (0.0994, 4.10)]),

@@ -26,13 +26,10 @@
     CEr          阻焊的介电常数
 """
 
-from __future__ import annotations
-
 from dataclasses import dataclass, field
-from typing import Dict, Tuple
 
 # 所有可能的参数（按 SI9000 的顺序）
-ALL_PARAMS: Tuple[str, ...] = (
+ALL_PARAMS: tuple[str, ...] = (
     "H1", "Er1", "H2", "Er2", "W1", "W2", "S1", "D1", "T1",
     "C1", "C2", "C3", "CEr",
 )
@@ -50,7 +47,7 @@ class Structure:
     coated: bool = False         # 是否有阻焊层（C1/C2/C3/CEr）
 
     @property
-    def params(self) -> Tuple[str, ...]:
+    def params(self) -> tuple[str, ...]:
         """该模型实际参与计算的参数（顺序固定，便于发送给后台）。"""
         p = ["H1", "Er1"]
         if self.layer == "inner":
@@ -69,7 +66,7 @@ class Structure:
         return tuple(p)
 
     @property
-    def can_goal_seek(self) -> Tuple[str, ...]:
+    def can_goal_seek(self) -> tuple[str, ...]:
         """后台支持反算（给定阻抗求几何）的参数。"""
         out = ["W2"]
         if self.kind == "diff":
@@ -84,7 +81,7 @@ def _s(impedance_type, name_cn, kind, layer, coplanar=False, coated=False):
 
 
 #: 嘉立创阻抗计算器里全部 12 个模型（顺序与官网一致）
-STRUCTURES: Tuple[Structure, ...] = (
+STRUCTURES: tuple[Structure, ...] = (
     _s("SurfaceMicrostrip1B", "单端阻抗（不带防焊）", "single", "outer"),
     _s("CoatedMicrostrip1B", "单端阻抗（外层）", "single", "outer", coated=True),
     _s("OffsetStripline1B1A", "单端阻抗（内层）", "single", "inner"),
@@ -99,7 +96,7 @@ STRUCTURES: Tuple[Structure, ...] = (
     _s("DiffOffsetCoplanarWaveguide1B1A", "共面差分阻抗（内层）", "diff", "inner", coplanar=True),
 )
 
-BY_TYPE: Dict[str, Structure] = {s.impedance_type: s for s in STRUCTURES}
+BY_TYPE: dict[str, Structure] = {s.impedance_type: s for s in STRUCTURES}
 
 
 def pick(kind: str, layer: str, coplanar: bool = False, coated: bool = True) -> Structure:
