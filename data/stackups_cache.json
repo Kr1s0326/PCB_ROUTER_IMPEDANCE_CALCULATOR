@@ -1,0 +1,6741 @@
+{
+ "2": [
+  {
+   "laminatedConstructionCode": "20220913081703606",
+   "receptionDisplayName": "JLC0216A",
+   "appointName": "JLC0216",
+   "plateLayerNumber": 2,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.5mm 1/1OZ 含铜",
+     "dielectricThick": 1.43,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.03,
+     "botConductorThick": 0.03
+    }
+   ]
+  }
+ ],
+ "4": [
+  {
+   "laminatedConstructionCode": "20221109041028832",
+   "receptionDisplayName": "JLC04161H-3313A(特殊/成品板厚1.58mm±10%)",
+   "appointName": "JLC04161H-3313A",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.107,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.1mm H/HOZ 含铜",
+     "dielectricThick": 1.065,
+     "dielectricConstant": 4.38,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.107,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20221015043406712",
+   "receptionDisplayName": "JLC04161H-7628A(特殊/成品板厚1.55mm±10%)",
+   "appointName": "JLC04161H-7628A",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.9mm H/HOZ 含铜",
+     "dielectricThick": 0.865,
+     "dielectricConstant": 4.55,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20221118071355865",
+   "receptionDisplayName": "JLC04161H-7628B(特殊/成品板厚1.60mm±10%)",
+   "appointName": "JLC04161H-7628B",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.4mm H/HOZ 不含铜",
+     "dielectricThick": 0.4,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202301190342121053",
+   "receptionDisplayName": "JLC04161H-7628C(特殊/成品板厚1.54mm±10%)",
+   "appointName": "JLC04161H-7628C",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202402021010091714",
+   "receptionDisplayName": "JLC04161H-7628D(特殊/成品板厚1.79mm±10%)",
+   "appointName": "JLC04161H-7628D",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.3mm H/HOZ 含铜",
+     "dielectricThick": 1.265,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202502170326462422",
+   "receptionDisplayName": "JLC04161H-7628E(特殊/成品板厚1.56mm±10%)",
+   "appointName": "JLC04161H-7628E",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.6mm H/HOZ 不含铜",
+     "dielectricThick": 0.6,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202503060414532482",
+   "receptionDisplayName": "JLC04161H-7628F(特殊/成品板厚1.64mm±10%)",
+   "appointName": "JLC04161H-7628F",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.23,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202607130748059522",
+   "receptionDisplayName": "JLC04161H-7628G(成品板厚1.63mm±10%)",
+   "appointName": "JLC04161H-7628G",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.5mm H/HOZ 不含铜",
+     "dielectricThick": 0.5,
+     "dielectricConstant": 4.48,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220901050831",
+   "receptionDisplayName": "JLC04161H-2116A(特殊/成品板厚1.62mm±10%)",
+   "appointName": "JLC04161H-2116A",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.6mm H/HOZ 不含铜",
+     "dielectricThick": 0.6,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220916120025662",
+   "receptionDisplayName": "JLC04161H-2116B(特殊/成品板厚1.63mm±10%)",
+   "appointName": "JLC04161H-2116B",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.9mm H/HOZ 含铜",
+     "dielectricThick": 0.865,
+     "dielectricConstant": 4.55,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220919080311682",
+   "receptionDisplayName": "JLC04161H-2116C(特殊/成品板厚1.57mm±10%)",
+   "appointName": "JLC04161H-2116C",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.1mm H/HOZ 含铜",
+     "dielectricThick": 1.065,
+     "dielectricConstant": 4.38,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202407040505581973",
+   "receptionDisplayName": "JLC04161H-2116(特殊/成品板厚1.6mm±10%)",
+   "appointName": "JLC04161H-2116",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.3mm H/HOZ 含铜",
+     "dielectricThick": 1.265,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202407230313541981",
+   "receptionDisplayName": "JLC04161H-2116D(特殊/成品板厚1.47mm±10%)",
+   "appointName": "JLC04161H-2116D",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.7mm H/HOZ 不含铜",
+     "dielectricThick": 0.7,
+     "dielectricConstant": 4.53,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202505140905562583",
+   "receptionDisplayName": "JLC04161H-2116E(特殊/成品板厚1.45mm±10%)",
+   "appointName": "JLC04161H-2116E",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.9mm H/HOZ 含铜",
+     "dielectricThick": 0.865,
+     "dielectricConstant": 4.55,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20211110040316",
+   "receptionDisplayName": "JLC04161H-1080(成品板厚1.52mm±10%)",
+   "appointName": "JLC04161H-1080",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.3mm H/HOZ 含铜",
+     "dielectricThick": 1.265,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220926073459683",
+   "receptionDisplayName": "JLC04161H-1080A(特殊/成品板厚1.49mm±10%)",
+   "appointName": "JLC04161H-1080A",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.1mm H/HOZ 含铜",
+     "dielectricThick": 1.065,
+     "dielectricConstant": 4.38,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202601040426384154",
+   "receptionDisplayName": "JLC04161H-1080B(特殊/成品板厚1.65mm±10%)",
+   "appointName": "JLC04161H-1080B",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.1mm H/HOZ 含铜",
+     "dielectricThick": 1.065,
+     "dielectricConstant": 4.38,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220811093551",
+   "receptionDisplayName": "客户自定义层压结构",
+   "appointName": "JLC04161H-自定义",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "自定义叠构提供人工计算阻抗及叠构服务，此层压结构仅做展示",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 0.0,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20211110053321",
+   "receptionDisplayName": "JLC04161H-3313(成品板厚1.56mm±10%)",
+   "appointName": "JLC04161H-3313",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.3mm H/HOZ 含铜",
+     "dielectricThick": 1.265,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20211110053231",
+   "receptionDisplayName": "JLC04161H-7628(通用/成品板厚1.59mm±10%)",
+   "appointName": "JLC04161H-7628",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.1mm H/HOZ 含铜",
+     "dielectricThick": 1.065,
+     "dielectricConstant": 4.38,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220913081702565",
+   "receptionDisplayName": "无要求",
+   "appointName": "JLC04161H-7628",
+   "plateLayerNumber": 4,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "1.1mm H/HOZ 含铜",
+     "dielectricThick": 1.065,
+     "dielectricConstant": 4.38,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  }
+ ],
+ "6": [
+  {
+   "laminatedConstructionCode": "20211110054726",
+   "receptionDisplayName": "JLC06161H-3313A(叠构重复/不要选用/后续取消)",
+   "appointName": "JLC06161H-3313A",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.55mm H/H不含铜",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1088,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.55mm H/H不含铜",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202501130519512402",
+   "receptionDisplayName": "JLC06161H-3313B(特殊/成品板厚1.55mm±10%)",
+   "appointName": "JLC06161H-3313B",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.4mm H/HOZ 不含铜",
+     "dielectricThick": 0.4,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.4mm H/HOZ 不含铜",
+     "dielectricThick": 0.4,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202509170354083132",
+   "receptionDisplayName": "JLC06161H-3313C(特殊/成品板厚1.45mm±10%)",
+   "appointName": "JLC06161H-3313C",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.107,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.4mm H/HOZ 不含铜",
+     "dielectricThick": 0.4,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.4mm H/HOZ 不含铜",
+     "dielectricThick": 0.4,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.107,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202510230200253202",
+   "receptionDisplayName": "JLC06161H-3313D(特殊/成品板厚1.54mm±10%)",
+   "appointName": "JLC06161H-3313D",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.107,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.23,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.23,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.107,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202601260616524415",
+   "receptionDisplayName": "JLC06161H-3313E(特殊/成品板厚1.65mm±10%）",
+   "appointName": "JLC06161H-3313E",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 3,
+     "material": "光板",
+     "materialName": "0.7mm H/H不含铜蚀刻成光板",
+     "dielectricThick": 0.7,
+     "dielectricConstant": 4.53,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220413080825",
+   "receptionDisplayName": "JLC06161H-7628(成品板厚1.55mm±10%)",
+   "appointName": "JLC06161H-7628",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.4mm H/HOZ 不含铜",
+     "dielectricThick": 0.4,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2028,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.4mm H/HOZ 不含铜",
+     "dielectricThick": 0.4,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202401290434101703",
+   "receptionDisplayName": "JLC06161H-7628A(特殊/成品板厚1.59mm±10%)",
+   "appointName": "JLC06161H-7628A",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202507090514402754",
+   "receptionDisplayName": "JLC06161H-7628B(特殊/成品板厚1.57mm±10%)",
+   "appointName": "JLC06161H-7628B",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.35mm H/HOZ 不含铜",
+     "dielectricThick": 0.35,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.35mm H/HOZ 不含铜",
+     "dielectricThick": 0.35,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202510220503543192",
+   "receptionDisplayName": "JLC06161H-7628C(特殊/成品板厚1.64mm±10%)",
+   "appointName": "JLC06161H-7628C",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.107,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.23,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.218,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.23,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.107,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202606110411028332",
+   "receptionDisplayName": "JLC06161H-7628D(成品板厚1.58mm±10%)",
+   "appointName": "JLC06161H-7628D",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.216,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2008,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.216,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "2026082803343711166",
+   "receptionDisplayName": "JLC06161H-7628E(特殊/成品板厚1.54mm±10%）",
+   "appointName": "JLC06161H-7628E",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 3,
+     "material": "光板",
+     "materialName": "0.55mm H/HOZ 不含铜蚀刻成光板",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.48,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20221217024151972",
+   "receptionDisplayName": "JLC06161H-2116A(特殊/成品板厚1.56mm±10%）",
+   "appointName": "JLC06161H-2116A",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.17,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 3,
+     "material": "光板",
+     "materialName": "0.7mm H/H不含铜蚀刻成光板",
+     "dielectricThick": 0.7,
+     "dielectricConstant": 4.53,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.17,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202311030423141564",
+   "receptionDisplayName": "JLC06161H-2116B(特殊/成品板厚1.52mm±10%)",
+   "appointName": "JLC06161H-2116B",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.5mm H/HOZ 不含铜",
+     "dielectricThick": 0.5,
+     "dielectricConstant": 4.48,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.5mm H/HOZ 不含铜",
+     "dielectricThick": 0.5,
+     "dielectricConstant": 4.48,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202407130545162007",
+   "receptionDisplayName": "JLC06161H-2116(特殊Tg170/成品板厚1.59mm±10%)",
+   "appointName": "JLC06161H-2116",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.30mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.56,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.30mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.56,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202604020225176486",
+   "receptionDisplayName": "JLC06161H-2116C(特殊/成品板厚1.59mm±10%)",
+   "appointName": "JLC06161H-2116C",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.30mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.56,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.30mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.56,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220413081025",
+   "receptionDisplayName": "JLC06161H-1080(成品板厚1.59mm±10%)",
+   "appointName": "JLC06161H-1080",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.55mm H/H不含铜",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2028,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.55mm H/H不含铜",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202302040509001056",
+   "receptionDisplayName": "JLC06161H-1080A(成品板厚1.57mm±10%)",
+   "appointName": "JLC06161H-1080A",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.6mm H/HOZ 不含铜",
+     "dielectricThick": 0.6,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0918,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.6mm H/HOZ 不含铜",
+     "dielectricThick": 0.6,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202303311014411078",
+   "receptionDisplayName": "JLC06161H-1080B(特殊/成品板厚1.6mm±10%）",
+   "appointName": "JLC06161H-1080B",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 3,
+     "material": "光板",
+     "materialName": "0.7mm H/H不含铜蚀刻成光板",
+     "dielectricThick": 0.7,
+     "dielectricConstant": 4.53,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202604030455286643",
+   "receptionDisplayName": "JLC06161H-1080C(特殊/成品板厚1.56mm±10%）",
+   "appointName": "JLC06161H-1080C",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 3,
+     "material": "光板",
+     "materialName": "0.7mm H/H不含铜蚀刻成光板",
+     "dielectricThick": 0.7,
+     "dielectricConstant": 4.53,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220810044901",
+   "receptionDisplayName": "客户自定义层压结构",
+   "appointName": "JLC06161H-自定义",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "自定义叠构提供人工计算阻抗及叠构服务，此层压结构仅做展示",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 0.0,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20221101010036760",
+   "receptionDisplayName": "JLC06161H-3313(免费/成品板厚1.54mm±10%)",
+   "appointName": "JLC06161H-3313",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.55mm H/H不含铜",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1088,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.55mm H/H不含铜",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220913081702568",
+   "receptionDisplayName": "无要求",
+   "appointName": "JLC06161H-3313",
+   "plateLayerNumber": 6,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.55mm H/H不含铜",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1088,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.55mm H/H不含铜",
+     "dielectricThick": 0.55,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  }
+ ],
+ "8": [
+  {
+   "laminatedConstructionCode": "202604290503317156",
+   "receptionDisplayName": "JLC08161H-3313(成品板厚1.57mm±10%)",
+   "appointName": "JLC08161H-3313",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "3313 RC57% 4.2mil",
+     "dielectricThick": 0.0994,
+     "dielectricConstant": 4.1,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220929034304675",
+   "receptionDisplayName": "JLC08161H-7628(成品板厚1.59mm±10%)",
+   "appointName": "JLC08161H-7628",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2028,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2028,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20221214031156952",
+   "receptionDisplayName": "JLC08161H-2116A(特殊/成品板厚1.61mm±10%）",
+   "appointName": "JLC08161H-2116A",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.23,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.23,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.23,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202507150200302757",
+   "receptionDisplayName": "JLC08161H-2116B(特殊/成品板厚1.57mm±10%)",
+   "appointName": "JLC08161H-2116B",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.17,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1088,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.7mm H/HOZ 不含铜",
+     "dielectricThick": 0.7,
+     "dielectricConstant": 4.53,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1088,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.17,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "2026090201411211056",
+   "receptionDisplayName": "JLC08161H-2116C(特殊结构/成品板厚1.52mm±10%)",
+   "appointName": "JLC08161H-2116C",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.17,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.17,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.17,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20211110043611",
+   "receptionDisplayName": "JLC08161H-1080(成品板厚1.62mm±10%)",
+   "appointName": "JLC08161H-1080",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2028,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2028,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20221130055258902",
+   "receptionDisplayName": "JLC08161H-1080A(特殊/成品板厚1.62mm±10%）",
+   "appointName": "JLC08161H-1080A",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202303290439041096",
+   "receptionDisplayName": "JLC08161H-1080B(特殊/成品板厚1.65mm±10%)",
+   "appointName": "JLC08161H-1080B",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.124,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202509050916283043",
+   "receptionDisplayName": "JLC08161H-1080C(特殊/成品板厚1.55mm±10%)",
+   "appointName": "JLC08161H-1080C",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC49% 8.6mil",
+     "dielectricThick": 0.2104,
+     "dielectricConstant": 4.4,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202602270320465328",
+   "receptionDisplayName": "JLC08161H-1080D(特殊/成品板厚1.53mm±10%)",
+   "appointName": "JLC08161H-1080D",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "2026081811580710832",
+   "receptionDisplayName": "JLC08161H-1080F(特殊/成品板厚1.52mm±10%)",
+   "appointName": "JLC08161H-1080F",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0688,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.9mm H/HOZ 含铜",
+     "dielectricThick": 0.865,
+     "dielectricConstant": 4.55,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0688,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "2026091701545611741",
+   "receptionDisplayName": "JLC08161H-1080J(特殊/成品板厚1.5mm±10%）",
+   "appointName": "JLC08161H-1080J",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220817082407",
+   "receptionDisplayName": "客户自定义层压结构",
+   "appointName": "JLC08161H-自定义",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "自定义叠构提供人工计算阻抗及叠构服务，此层压结构仅做展示",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 0.0,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202601210346044320",
+   "receptionDisplayName": "JLC08161H-2313(特殊结构/成品板厚1.52mm±10%)",
+   "appointName": "JLC08161H-2313",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.03,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.30mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.56,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.13mm H/HOZ 不含铜",
+     "dielectricThick": 0.13,
+     "dielectricConstant": 4.03,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202607180224329724",
+   "receptionDisplayName": "JLC08161H-2313A(特殊结构/成品板厚1.58mm±10%)",
+   "appointName": "JLC08161H-2313A",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.35,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.35,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.127,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.35,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220913081702559",
+   "receptionDisplayName": "无要求",
+   "appointName": "JLC08161H-2116",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20211110043453",
+   "receptionDisplayName": "JLC08161H-2116(通用免费/成品板厚1.6mm±10%)",
+   "appointName": "JLC08161H-2116",
+   "plateLayerNumber": 8,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.3mm H/HOZ 不含铜",
+     "dielectricThick": 0.3,
+     "dielectricConstant": 4.41,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116  RC54% 4.9mil",
+     "dielectricThick": 0.1164,
+     "dielectricConstant": 4.16,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  }
+ ],
+ "10": [
+  {
+   "laminatedConstructionCode": "202401290831371722",
+   "receptionDisplayName": "JLC10161H-2116A(特殊/成品板厚1.55mm±10%)",
+   "appointName": "JLC10161H-2116A",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20221210064419923",
+   "receptionDisplayName": "JLC10161H-1080(成品板厚1.61mm±10%)",
+   "appointName": "JLC10161H-1080",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0888,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0888,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0888,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.25mm H/HOZ 不含铜",
+     "dielectricThick": 0.25,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20221210095908942",
+   "receptionDisplayName": "JLC10161H-1080A(特殊/成品板厚1.6mm±10%)",
+   "appointName": "JLC10161H-1080A",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2008,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202408191100082034",
+   "receptionDisplayName": "JLC10161H-1080B(特殊/成品板厚1.6mm±10%)",
+   "appointName": "JLC10161H-1080B",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 4.14,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 4.14,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.216,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 4.14,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.075mm H/HOZ 不含铜",
+     "dielectricThick": 0.075,
+     "dielectricConstant": 4.14,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080 RC69% 3.39mil",
+     "dielectricThick": 0.0784,
+     "dielectricConstant": 3.99,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "2026091202084111569",
+   "receptionDisplayName": "JLC10161H-1080C(特殊/成品板厚1.57mm±10%)",
+   "appointName": "JLC10161H-1080C",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.15mm H/HOZ 不含铜",
+     "dielectricThick": 0.15,
+     "dielectricConstant": 4.36,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.0764,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "1080  RC67% 3.3mil",
+     "dielectricThick": 0.084,
+     "dielectricConstant": 3.91,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220817084712",
+   "receptionDisplayName": "客户自定义层压结构",
+   "appointName": "JLC10161H-自定义",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "自定义叠构提供人工计算阻抗及叠构服务，此层压结构仅做展示",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 0.0,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "Hoz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.0175,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202604170334586925",
+   "receptionDisplayName": "JLC10161H-2313(成品厚度1.56mm±10%)",
+   "appointName": "JLC10161H-2313",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.104,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2313 RC58% 4.09mil",
+     "dielectricThick": 0.0964,
+     "dielectricConstant": 4.27,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "202410141109452142",
+   "receptionDisplayName": "JLC10161H-7628(普通/成品板厚1.61mm±10%)",
+   "appointName": "JLC10161H-7628",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2008,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2008,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2008,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.10mm H/HOZ 不含铜",
+     "dielectricThick": 0.1,
+     "dielectricConstant": 4.11,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "7628 RC50% 8.5mil",
+     "dielectricThick": 0.2084,
+     "dielectricConstant": 4.46,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220420023601",
+   "receptionDisplayName": "JLC10161H-2116(通用免费/成品厚度1.57mm±10%)",
+   "appointName": "JLC10161H-2116",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1118,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1118,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1118,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  },
+  {
+   "laminatedConstructionCode": "20220913081703590",
+   "receptionDisplayName": "无要求",
+   "appointName": "JLC10161H-2116",
+   "plateLayerNumber": 10,
+   "plateThickness": 1.6,
+   "cuprumThickness": 1.0,
+   "innerCopperThickness": 0.5,
+   "boardType": 1,
+   "basicDataList": [
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1118,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1118,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1118,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 2,
+     "material": "芯板",
+     "materialName": "0.2mm H/HOZ 不含铜",
+     "dielectricThick": 0.2,
+     "dielectricConstant": 4.42,
+     "topConductorThick": 0.0152,
+     "botConductorThick": 0.0152
+    },
+    {
+     "materialType": 0,
+     "material": "PP",
+     "materialName": "2116 RC57% 5mil",
+     "dielectricThick": 0.1194,
+     "dielectricConstant": 4.29,
+     "topConductorThick": 0.0,
+     "botConductorThick": 0.0
+    },
+    {
+     "materialType": 1,
+     "material": "铜箔",
+     "materialName": "1oz",
+     "dielectricThick": 0.0,
+     "dielectricConstant": 4.2,
+     "topConductorThick": 0.035,
+     "botConductorThick": 0.0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{"mark": "OffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 5, "W2": 4.99, "T1": 0.01}, "z": 86.9861476622, "status": 0}
+{"mark": "OffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 8, "W2": 7.99, "T1": 0.01}, "z": 73.5955052683, "status": 0}
+{"mark": "OffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 12, "W2": 11.99, "T1": 0.01}, "z": 62.1843497985, "status": 0}
+{"mark": "OffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 20, "W2": 19.99, "T1": 0.01}, "z": 48.3140459964, "status": 0}
+{"mark": "OffsetStripline1B1A", "params": {"H1": 5, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 8, "W2": 7.99, "T1": 0.01}, "z": 46.4352619216, "status": 0}
+{"mark": "OffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 5, "Er2": 4.3, "W1": 8, "W2": 7.99, "T1": 0.01}, "z": 46.3925014202, "status": 0}
+{"mark": "OffsetStripline1B1A", "params": {"H1": 10, "Er1": 4.3, "H2": 30, "Er2": 4.3, "W1": 8, "W2": 7.99, "T1": 0.01}, "z": 63.9311284153, "status": 0}
+{"mark": "OffsetStripline1B1A", "params": {"H1": 30, "Er1": 4.3, "H2": 10, "Er2": 4.3, "W1": 8, "W2": 7.99, "T1": 0.01}, "z": 63.9097557649, "status": 0}
+{"mark": "OffsetStripline1B1A", "params": {"H1": 4, "Er1": 4.3, "H2": 40, "Er2": 4.3, "W1": 8, "W2": 7.99, "T1": 0.01}, "z": 42.3844066859, "status": 0}
+{"mark": "DiffOffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 8, "W2": 7.99, "S1": 4, "T1": 0.01}, "z": 92.0085379784, "status": 0}
+{"mark": "DiffOffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 8, "W2": 7.99, "S1": 8, "T1": 0.01}, "z": 109.696270059, "status": 0}
+{"mark": "DiffOffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 8, "W2": 7.99, "S1": 16, "T1": 0.01}, "z": 128.18971579, "status": 0}
+{"mark": "DiffOffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 8, "W2": 7.99, "S1": 30, "T1": 0.01}, "z": 140.976258175, "status": 0}
+{"mark": "DiffOffsetStripline1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 8, "W2": 7.99, "S1": 8, "T1": 0.01}, "z": 109.696270059, "status": 0}
+{"mark": "DiffOffsetCoplanarWaveguide1B1A", "params": {"H1": 20, "Er1": 4.3, "H2": 20, "Er2": 4.3, "W1": 8, "W2": 7.99, "S1": 8, "D1": 10, "T1": 0.01}, "z": 106.369861998, "status": 0}
+{"mark": "DiffOffsetStripline1B1A", "params": {"H1": 10, "Er1": 4.3, "H2": 40, "Er2": 4.3, "W1": 8, "W2": 7.99, "S1": 8, "T1": 0.01}, "z": 103.426383833, "status": 0}
+{"mark": "DiffOffsetCoplanarWaveguide1B1A", "params": {"H1": 10, "Er1": 4.3, "H2": 40, "Er2": 4.3, "W1": 8, "W2": 7.99, "S1": 8, "D1": 10, "T1": 0.01}, "z": 101.525303371, "status": 0}
