@@ -1,0 +1,5 @@
+(version 1)
+# JLCPCB template - intentionally no custom rules.
+# Via 0.4mm / drill 0.3mm and min annular ring 0.05mm are configured in
+# Board Setup > Design Rules > Constraints (stored in the .kicad_pro).
+
