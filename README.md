@@ -1,13 +1,24 @@
-# 嘉立创阻抗计算器 · Python 复刻
+# PCB 阻抗计算器 · 离线引擎
 
-> **一句话**：嘉立创的「阻抗计算神器」网页**自己不算阻抗**——它把参数发给后台的
-> Polar SI9000 场求解器，再用 WebSocket 收回结果。
-> 本项目做两件事：
-> **① 用 Python 复刻它的调用协议**（结果与官网逐位一致）；
-> **② 逆向 + 实测建模出一个零依赖的离线引擎**（独立留出集平均误差 4.3%）。
+> **给定叠层与目标阻抗，解出线宽**；也可以反过来：给定几何，算出阻抗。
+> 默认走**离线引擎** —— 毫秒级、不联网、运行时零第三方依赖（纯标准库）。
+> 另外附一个**在线引擎**，直接调用嘉立创的接口取真值，用于对拍与采样。
+
+**验证情况：以嘉立创（JLCPCB）在线阻抗计算器为参考基准**，在它的真实叠层上
+做了 222 组端到端校验：
+
+| 口径 | 平均 | 中位 | ≤1% 占比 | ≤2% 占比 |
+|---|---|---|---|---|
+| **正算**｜同一线宽下 Z 的相对偏差 | **0.54 %** | 0.45 % | 89 % | 97 % |
+| **反算**｜解出的线宽相对偏差 | **1.39 %** | 1.12 % | 45 % | 84 % |
+
+覆盖 2 / 4 / 6 / 8 / 10 层 × 单端 50/75 Ω × 差分 90/100 Ω。另有 10 组落在
+嘉立创工艺下限之外 —— **其引擎自己就返回 `status=6` 无解** —— 已从统计中剔除。
+
+![离线引擎 vs 嘉立创在线引擎：2/4/6/8/10 层实测校验](reports/figures/validation.svg)
 
 ```
-Python 3.9+  ·  运行时零依赖（纯标准库）  ·  31 个离线测试  ·  MIT
+Python 3.9+  ·  运行时零依赖（纯标准库）  ·  52 个离线测试  ·  MIT
 ```
 
 ---
@@ -69,10 +80,11 @@ L1  CoatedMicrostrip1B   线宽 W1 = 13.952 mil (0.3544 mm)  (离线模型：反
 L2  OffsetStripline1B1A  线宽 W1 = 11.067 mil (0.2811 mm)  (离线模型：反算线宽典型误差 ±3.0%)
 ```
 
-### 2.2 端到端校验（2 / 4 / 6 / 8 / 10 层，232 个用例）
+### 2.2 端到端校验（2 / 4 / 6 / 8 / 10 层，222 个有效用例）
 
 > `tools/validate_layers.py` → [`reports/validation_report.html`](reports/validation_report.html)
-> （自包含 HTML，内联 SVG 图表）
+> （自包含 HTML，内联图表）
+> 校验图：`tools/make_validation_figure.py` → [`reports/figures/validation.svg`](reports/figures/validation.svg)
 
 覆盖官网 9 个通用叠层 × 每一层铜 × 单端 50/75Ω、差分 90/100Ω：
 
@@ -85,12 +97,25 @@ L2  OffsetStripline1B1A  线宽 W1 = 11.067 mil (0.2811 mm)  (离线模型：反
 | 10 层 | 70 | 1.16% | 1.09% | 4.34% |
 | **合计** | **222** | **1.39%** | **1.12%** | 7.12% |
 
+同一批案例的**正算**对比（把 JLC 解出的线宽原样喂给离线引擎，比阻抗）：
+
+| 口径 | 平均 | 中位 | P90 | 最大 | ≤1% | ≤2% |
+|---|---|---|---|---|---|---|
+| 正算 Z 偏差 | **0.54%** | 0.45% | 1.05% | 2.22% | 89% | 97% |
+| 反算线宽偏差 | **1.39%** | 1.12% | 2.61% | 7.12% | 45% | 84% |
+
+![校验图](reports/figures/validation.svg)
+
 **84% 的用例误差 ≤2%**。误差 >3% 的全部出现在 `W < 3 mil` 的**不可制造点**
 （75Ω 落在薄介质内层，低于嘉立创工艺下限 ~3.5mil——官网自己也算不出来，
 返回 `status=6`）。报告里这些行标了 ⚠ 并单列统计。
 
-> ⚠️ **口径说明**：§2.2 用的是官网的**真实叠层**，其几何落在训练流形上，
-> 所以比 §2.1 乐观。**要引用数字请用 §2.1 的留出集。**
+> ⚠️ **三个数字口径不同，别混用**：
+> - **0.54% / 1.39%**（§2.2）＝官网**真实叠层**上的实测值 —— 最能代表实际使用；
+> - **4.28%**（§2.1）＝均匀撒在**全参数空间**的留出集，含大量极端/边缘几何，
+>   是「最严苛口径」，用来比较算法优劣。
+>
+> 对外说精度建议引用真实叠层的口径，并注明是相对嘉立创引擎（而非物理真值）。
 
 ### 2.3 引擎本身的可靠性（实测）
 
@@ -285,13 +310,16 @@ impedance_calculator/
 │   ├── check_engine.py       测官网重复性 / 正反算自洽 / 采 T=0.01 点
 │   ├── fit_calibration.py    拟合 → _coefs.py + _krrs.py
 │   ├── validate_layers.py    全层数校验 → HTML 报告
+│   ├── make_validation_figure.py  校验图（手写 SVG，零依赖）
 │   ├── make_width_table.py   叠层速查表
 │   ├── make_kicad_templates.py / check_templates.py   生成并复验 KiCad 模板
+│   ├── kicad_ref/            KiCad 参考模板（生成器不依赖外部目录）
 │   └── experiments/          被否掉的方案的对照实验
 ├── data/                     采样数据（jsonl / json）
-├── reports/                  生成的报告（含 HTML）
+├── reports/                  生成的报告（HTML / Markdown / JSON）
+│   └── figures/validation.svg   校验图（README 顶部引用）
 ├── examples/walkthrough.py   逐步讲解一次完整计算
-└── tests/                    31 个离线测试（unittest，零依赖）
+└── tests/                    52 个离线测试（unittest，零依赖）
 ```
 
 **耦合约束**：工具脚本**之间不互相 import**，共享代码只放在 `tools/_common.py`；
@@ -318,18 +346,21 @@ python tools/check_engine.py
 # 4) 拟合 → jlc_impedance/_coefs.py + _krrs.py + reports/calibration_report.md
 python tools/fit_calibration.py
 
-# 5) 全层数校验 → reports/validation_report.html（232 个请求）
+# 5) 全层数校验 → reports/validation_all.json + validation_report.html（232 个请求）
 python tools/validate_layers.py
 
-# 6) 后端对照实验 → reports/backend_comparison.md
+# 6) 校验图 → reports/figures/validation.svg（零依赖，手写 SVG）
+python tools/make_validation_figure.py
+
+# 7) 后端对照实验 → reports/backend_comparison.md
 python tools/experiments/compare_backends.py --symbolic
 
-# 7) 生成 2/4/6/8/10 层的 KiCad 叠层与设计规则模板（可选）
+# 8) 生成 2/4/6/8/10 层的 KiCad 叠层与设计规则模板（可选）
 python tools/make_kicad_templates.py                 # 默认写到仓库旁的 PCB TEMPLATE/
 python tools/make_kicad_templates.py --out DIR       # 或指定目录
 python tools/check_templates.py                      # 复验生成结果
 
-# 8) 看懂算法：逐步打印一次完整计算
+# 9) 看懂算法：逐步打印一次完整计算
 python examples/walkthrough.py
 ```
 
@@ -391,7 +422,12 @@ python -m jlc_impedance solve   --offline ...    # 强制离线
 
 ## 11. 许可与合规
 
-MIT，见 [LICENSE](LICENSE)。项目通过公开接口访问嘉立创的在线服务并对其返回数据建模，
-**不含该服务的任何代码或二进制**；脚本已内置节流（~0.8 req/s），请勿改成高频请求。
+MIT，见 [LICENSE](LICENSE)。
+
+本项目是**独立的阻抗计算实现**：物理基底（MoM 精确场解 / 共形映射）+ 用公开
+接口返回的数据做校准。**不含嘉立创服务的任何代码或二进制**，运行时也不依赖
+它 —— 离线引擎完全自洽。嘉立创的在线计算器在这里的角色是**参考基准与数据来源**。
+
+脚本已内置节流（~0.8 req/s），请勿改成高频请求。
 「嘉立创」「JLCPCB」「Polar SI9000」等字样仅用于说明事实与数据来源，
 相关商标归各自所有者。计算结果仅供设计参考，最终以嘉立创工程确认为准。
