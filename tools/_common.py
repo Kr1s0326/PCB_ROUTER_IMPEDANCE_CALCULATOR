@@ -28,8 +28,8 @@ TOOLS = os.path.dirname(os.path.abspath(__file__))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-from jlc_impedance import analytic                                   # noqa: E402
-from jlc_impedance.calibration import compact_inputs, features       # noqa: E402
+from jlc_impedance import analytic, calibration                        # noqa: E402
+from jlc_impedance.calibration import compact_inputs, features         # noqa: E402
 
 # ---- 数据文件（唯一真相）----
 FILE_TRAIN = [os.path.join(DATA, 'calibration.jsonl'),
@@ -211,22 +211,31 @@ def forward_select(rows: Sequence[Dict[str, Any]], pool: Sequence[str],
 #  误差度量（端到端：反算线宽）
 # --------------------------------------------------------------------------- #
 def cal_z(mark: str, params: Dict[str, float], names: Sequence[str],
-          beta: Sequence[float]) -> float:
-    """校准后的阻抗（线性级 + 核级）。"""
+          beta: Sequence[float], krr_store: Optional[dict] = None) -> float:
+    """校准后的阻抗。
+
+    ``krr_store`` 给出时叠加核级残差修正，即**出厂模型的完整两级校准**
+    （与 :func:`jlc_impedance.calibration.apply_correction` 一致）；
+    不给就只算线性级，供拟合期内部评估用（此时 beta 是折内新拟合的）。
+    """
     zb, _ = analytic.estimate(mark, params, calibrated=False)
     f = features(params)
     k = sum(b * f.get(n, 0.0) for b, n in zip(beta, names))
+    if krr_store:
+        k += calibration.krr_predict(krr_store, params)
     return zb * math.exp(max(-1.0, min(1.0, k)))
 
 
 def invert_width(mark: str, base: Dict[str, float], target: float, delta: float,
                  names: Sequence[str], beta: Sequence[float],
-                 hi: float = 250.0, steps: int = 60) -> Optional[float]:
+                 hi: float = 250.0, steps: int = 60,
+                 krr_store: Optional[dict] = None) -> Optional[float]:
     """二分反算线宽 W1，使校准模型给出 target。"""
     lo = delta + 0.2
 
     def z_of(w: float) -> float:
-        return cal_z(mark, dict(base, W1=w, W2=max(w - delta, 0.05)), names, beta)
+        return cal_z(mark, dict(base, W1=w, W2=max(w - delta, 0.05)), names, beta,
+                     krr_store)
 
     flo, fhi = z_of(lo) - target, z_of(hi) - target
     if flo * fhi > 0:
@@ -242,14 +251,19 @@ def invert_width(mark: str, base: Dict[str, float], target: float, delta: float,
 
 def width_errors(rows: Sequence[Dict[str, Any]], names: Sequence[str],
                  beta: Sequence[float], z_range: Optional[Tuple[float, float]] = None,
-                 steps: int = 60) -> Tuple[List[float], int]:
-    """在留出数据上反算线宽，返回 ``(百分比误差列表, 未收敛数)``。"""
+                 steps: int = 60,
+                 krr_store: Optional[dict] = None) -> Tuple[List[float], int]:
+    """在留出数据上反算线宽，返回 ``(百分比误差列表, 未收敛数)``。
+
+    传入 ``krr_store`` 时评估的是完整的两级模型。
+    """
     out, skipped = [], 0
     for r in rows:
         p = r['params']
         if z_range and not (z_range[0] <= r['z'] <= z_range[1]):
             continue
-        w = invert_width(r['mark'], p, r['z'], p['W1'] - p['W2'], names, beta, steps=steps)
+        w = invert_width(r['mark'], p, r['z'], p['W1'] - p['W2'], names, beta,
+                         steps=steps, krr_store=krr_store)
         if w:
             out.append(100.0 * (w - p['W1']) / p['W1'])
         else:

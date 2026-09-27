@@ -18,7 +18,7 @@ def _load_stackup(args, api: Optional[JlcApi]) -> Stackup:
     if key in BUILTIN_STACKUPS:
         return BUILTIN_STACKUPS[key]
     if api is None:
-        raise SystemExit("内置叠层里没有 %r（可选：%s）。加 --keep-online 可以在线按名字查。"
+        raise SystemExit("内置叠层里没有 %r（可选：%s）。加 --online 可以按名字在线查叠层。"
                          % (key, ", ".join(BUILTIN_STACKUPS)))
     for tpl in api.templates(args.layers, args.thickness, args.outer_cu, args.inner_cu):
         name = tpl.get("receptionDisplayName") or tpl.get("appointName") or ""
@@ -128,18 +128,19 @@ def cmd_rules(args, api):
 # --------------------------------------------------------------------------- #
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="jlc_impedance",
-                                description="嘉立创阻抗计算器（Python 复刻）")
+                                description="PCB 阻抗计算器：叠层 + 目标阻抗 → 线宽"
+                                            "（默认离线引擎，加 --online 用嘉立创在线引擎）")
     p.add_argument("--json", action="store_true", help="以 JSON 输出结果")
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    def common(sp, online_default=True):
+    def common(sp):
         sp.add_argument("--stackup", default="JLC04161H-7628", help="叠层名，如 JLC04161H-3313")
         sp.add_argument("--layers", type=int, default=4, help="在线查叠层时的层数")
         sp.add_argument("--thickness", type=float, default=1.6, help="在线查叠层时的板厚 mm")
         sp.add_argument("--outer-cu", type=float, default=1.0, help="外层铜厚 oz")
         sp.add_argument("--inner-cu", type=float, default=0.5, help="内层铜厚 oz")
-        sp.add_argument("--offline", action="store_true",
-                        help="用离线公式估算（默认用官网在线引擎）")
+        sp.add_argument("--online", action="store_true",
+                        help="改用嘉立创在线引擎（默认走离线引擎）")
         return sp
 
     sp = sub.add_parser("list", help="列出叠层与 SI9000 结构")
@@ -147,7 +148,7 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--thickness", type=float, default=1.6)
     sp.add_argument("--outer-cu", type=float, default=1.0)
     sp.add_argument("--inner-cu", type=float, default=0.5)
-    sp.add_argument("--offline", action="store_true")
+    sp.add_argument("--online", action="store_true")
     sp.set_defaults(func=cmd_list)
 
     sp = common(sub.add_parser("show", help="显示叠层解析结果与 SI9000 参数"))
@@ -185,12 +186,11 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: Optional[List[str]] = None) -> int:
     args = build_parser().parse_args(argv)
-    need_api = not getattr(args, "offline", False)
-    api = JlcApi() if need_api else None
+    api = JlcApi() if getattr(args, "online", False) else None
     try:
         args.func(args, api)
     except JlcApiError as exc:
-        print("在线引擎出错：%s\n（可以用 --offline 走离线公式）" % exc, file=sys.stderr)
+        print("在线引擎出错：%s\n（去掉 --online 即走离线引擎）" % exc, file=sys.stderr)
         return 2
     finally:
         if api is not None:

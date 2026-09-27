@@ -2,21 +2,24 @@
 
 全部为**反算线宽**相对误差（给定目标阻抗解线宽，与官网解出的线宽比）。
 
-| 结构 | 样本 | 基底误差(lnZ) | 训练集 CV | **留出集** | 留出集最大 | n | 工作区 |
-|---|---|---|---|---|---|---|---|
-| `CoatedCoplanarWaveguideWithLowerGnd1B` | 90 | 15.2% | 5.71% | **5.87%** | 15.31% | 15 | 5.07% |
-| `CoatedMicrostrip1B` | 145 | 4.3% | 1.34% | **1.39%** | 3.20% | 15 | 1.10% |
-| `DiffCoatedCoplanarWaveguideWithLowerGnd1B` | 80 | 26.2% | 10.29% | **9.79%** | 18.21% | 15 | 9.33% |
-| `DiffEdgeCoupledCoatedMicrostrip1B` | 135 | 13.5% | 5.98% | **7.02%** | 18.72% | 15 | 4.64% |
-| `DiffEdgeCoupledSurfaceMicrostrip1B` | 95 | 11.4% | 7.31% | **8.14%** | 23.63% | 15 | 5.48% |
-| `DiffOffsetCoplanarWaveguide1B1A` | 115 | 21.1% | 9.98% | **10.06%** | 15.68% | 10 | 8.74% |
-| `DiffOffsetStripline1B1A` | 156 | 14.7% | 8.84% | **9.81%** | 27.36% | 14 | 6.79% |
-| `DiffSurfaceCoplanarWaveguideWithLowerGnd1B` | 80 | 28.5% | 5.66% | **9.21%** | 24.85% | 15 | 4.09% |
-| `OffsetCoplanarWaveguide1B1A` | 115 | 22.3% | 10.58% | **7.89%** | 13.80% | 12 | 11.84% |
-| `OffsetStripline1B1A` | 164 | 13.0% | 4.66% | **5.05%** | 11.47% | 12 | 3.75% |
-| `SurfaceCoplanarWaveguideWithLowerGnd1B` | 90 | 17.1% | 4.48% | **5.11%** | 10.29% | 15 | 5.88% |
-| `SurfaceMicrostrip1B` | 105 | 1.5% | 0.63% | **0.37%** | 0.70% | 15 | 0.30% |
+| 结构 | 样本 | 基底 | 训练集 CV | 线性级 | **两级(出厂)** | 留出集最大 | n | 工作区 |
+|---|---|---|---|---|---|---|---|---|
+| `CoatedCoplanarWaveguideWithLowerGnd1B` | 90 | 15.2% | 5.71% | 5.87% | **4.62%** | 13.58% | 15 | 1.80% |
+| `CoatedMicrostrip1B` | 145 | 4.3% | 1.34% | 1.39% | **1.62%** | 4.35% | 15 | 0.87% |
+| `DiffCoatedCoplanarWaveguideWithLowerGnd1B` | 80 | 26.2% | 10.29% | 9.79% | **5.08%** | 9.29% | 15 | 2.83% |
+| `DiffEdgeCoupledCoatedMicrostrip1B` | 135 | 13.5% | 5.98% | 7.02% | **3.87%** | 11.08% | 15 | 2.29% |
+| `DiffEdgeCoupledSurfaceMicrostrip1B` | 95 | 11.4% | 7.31% | 8.14% | **3.02%** | 7.85% | 15 | 1.71% |
+| `DiffOffsetCoplanarWaveguide1B1A` | 115 | 21.1% | 9.98% | 10.06% | **11.64%** | 24.03% | 10 | 3.45% |
+| `DiffOffsetStripline1B1A` | 156 | 14.7% | 8.84% | 9.81% | **5.20%** | 9.66% | 14 | 2.92% |
+| `DiffSurfaceCoplanarWaveguideWithLowerGnd1B` | 80 | 28.5% | 5.66% | 9.21% | **5.63%** | 19.33% | 15 | 1.40% |
+| `OffsetCoplanarWaveguide1B1A` | 115 | 22.3% | 10.58% | 7.89% | **5.00%** | 10.24% | 12 | 3.69% |
+| `OffsetStripline1B1A` | 164 | 13.0% | 4.66% | 5.05% | **3.02%** | 6.29% | 12 | 1.37% |
+| `SurfaceCoplanarWaveguideWithLowerGnd1B` | 90 | 17.1% | 4.48% | 5.11% | **2.32%** | 5.23% | 15 | 1.55% |
+| `SurfaceMicrostrip1B` | 105 | 1.5% | 0.63% | 0.37% | **0.29%** | 0.66% | 15 | 0.16% |
 
+> 「基底」＝纯物理公式（无校准）在训练集上的 lnZ 残差；
+> 「线性级」＝只加对数线性修正；「两级(出厂)」＝线性 + RBF 核残差，
+> 即 :func:`jlc_impedance.calibration.apply_correction` 实际给出的模型。
 > 留出集（`data/holdout.jsonl`）从不参与拟合与特征选择，是**唯一无偏**的口径；
 > 训练集 CV 因为前向选择用过全量数据而偏乐观。
 
