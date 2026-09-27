@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# 虚拟环境 / 编辑器
+.venv/
+venv/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# 临时文件
+*.log
+*.tmp

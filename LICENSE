@@ -1,0 +1,34 @@
+MIT License
+
+Copyright (c) 2026 KICAD_PCB_RULES contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---------------------------------------------------------------------------
+
+说明（非法律条款，仅为合规提示）
+
+本项目通过公开的 HTTP / WebSocket 接口访问嘉立创（JLC）的在线阻抗计算服务，
+并对其返回的数据做了建模与拟合。项目本身不包含该服务的任何代码或二进制。
+
+* 「嘉立创」「JLCPCB」「Polar SI9000」等字样仅用于说明事实与数据来源，
+  相关商标归各自所有者。
+* 在线接口的使用请遵守服务方的条款，脚本已内置节流（约 0.8 req/s），
+  请勿改成高频请求。
+* 计算结果仅供设计参考，最终以嘉立创工程确认的叠构与阻抗为准。
